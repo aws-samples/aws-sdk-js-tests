@@ -1,0 +1,20 @@
+{
+  "name": "aws-sdk-js-tests",
+  "version": "1.0.0",
+  "description": "Code Sample for testing AWS JS SDK",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trivikr/aws-sdk-js-tests.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trivikr/aws-sdk-js-tests/issues"
+  },
+  "homepage": "https://github.com/trivikr/aws-sdk-js-tests#readme"
+}
