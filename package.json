@@ -29,5 +29,9 @@
   },
   "lint-staged": {
     "*.{js,css,json,md}": "prettier --write"
+  },
+  "dependencies": {
+    "@aws-sdk/client-acm": "^1.0.0-alpha.10",
+    "aws-sdk": "^2.609.0"
   }
 }
