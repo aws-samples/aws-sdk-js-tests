@@ -8,13 +8,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/trivikr/aws-sdk-js-tests.git"
+    "url": "git+https://github.com/aws-samples/aws-sdk-js-tests.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/trivikr/aws-sdk-js-tests/issues"
+    "url": "https://github.com/aws-samples/aws-sdk-js-tests/issues"
   },
-  "homepage": "https://github.com/trivikr/aws-sdk-js-tests#readme"
+  "homepage": "https://github.com/aws-samples/aws-sdk-js-tests#readme"
 }
