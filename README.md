@@ -13,8 +13,21 @@ Code Sample for testing AWS JS SDK
 
 - Checkout master branch: `git checkout master`
 - Run `yarn` to install dependencies
+
+#### Node.js:
+
 - Run `node src/node.js` to run both v2 and v3 clients in Node.js
 - Note that responses returned by clients will be printed in console
+
+#### Browser:
+
+- Run `yarn webpack` to create browser bundle
+- Go through the following steps if you don't have resources created
+  - [Create a Amazon Cognito Identity pool for testing](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/getting-started-browser.html#getting-started-browser-create-identity-pool)
+  - [Add a Policy to the Created test IAM Role](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/getting-started-browser.html#getting-started-browser-iam-role)
+  - Update the resources in <config to be added>
+- Run `yarn webpack` to create the browser bundle
+- Open `index.html` in your browser, and note the responses printed on the page
 
 ## License
 
