@@ -2,9 +2,10 @@
   "name": "aws-sdk-js-tests",
   "version": "1.0.0",
   "description": "Code Sample for testing AWS JS SDK",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack --watch"
   },
   "repository": {
     "type": "git",
@@ -20,7 +21,9 @@
   "devDependencies": {
     "husky": ">=1",
     "lint-staged": ">=8",
-    "prettier": "^1.19.1"
+    "prettier": "1.19.1",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
   },
   "husky": {
     "hooks": {
@@ -31,7 +34,7 @@
     "*.{js,css,json,md}": "prettier --write"
   },
   "dependencies": {
-    "@aws-sdk/client-acm": "^1.0.0-alpha.10",
+    "@aws-sdk/client-dynamodb": "^1.0.0-alpha.11",
     "aws-sdk": "^2.609.0"
   }
 }
