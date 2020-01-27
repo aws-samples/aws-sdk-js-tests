@@ -9,9 +9,9 @@ async function component() {
   AWS.config.credentials = new AWS.CognitoIdentityCredentials({
     IdentityPoolId: IDENTITY_POOL_ID
   });
-  const v2Client = new AWS.ACM();
-  const response = await v2Client.listCertificates().promise();
-  element.innerHTML = `Data returned by v2: ${response}!`;
+  const v2Client = new AWS.DynamoDB();
+  const response = await v2Client.listTables().promise();
+  element.innerHTML = `Data returned by v2: ${JSON.stringify(response)}!`;
 
   return element;
 }
