@@ -9,13 +9,14 @@ Code Sample for testing AWS JS SDK
 - Add the code for testing AWS JS SDK v2/v3
 - Push code to remote branch on your fork, and share the code for reproducing
 
-### Example test for data returned by ACM client:
+### Example test for data returned by DynamoDB client:
 
 - Checkout master branch: `git checkout master`
 - Run `yarn` to install dependencies
 
 #### Node.js:
 
+- Update REGION in [`src/config.js`](./src/config.js)
 - Run `node src/node.js` to run both v2 and v3 clients in Node.js
 - Note that responses returned by clients will be printed in console
 

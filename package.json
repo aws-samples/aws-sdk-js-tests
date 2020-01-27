@@ -34,7 +34,7 @@
     "*.{js,css,json,md}": "prettier --write"
   },
   "dependencies": {
-    "@aws-sdk/client-acm": "^1.0.0-alpha.10",
+    "@aws-sdk/client-dynamodb": "^1.0.0-alpha.11",
     "aws-sdk": "^2.609.0"
   }
 }
