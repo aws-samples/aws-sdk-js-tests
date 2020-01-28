@@ -28,6 +28,9 @@ async function componentV3() {
   const v3Client = new DynamoDB({
     region: REGION,
     credentials: fromCognitoIdentityPool({
+      client: new CognitoIdentityClient({
+        region: REGION
+      }),
       identityPoolId: IDENTITY_POOL_ID
     })
   });
