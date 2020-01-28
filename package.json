@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "webpack": "webpack --watch"
+    "build": "webpack",
+    "watch": "webpack --mode development --watch"
   },
   "repository": {
     "type": "git",
@@ -34,7 +35,9 @@
     "*.{js,css,json,md}": "prettier --write"
   },
   "dependencies": {
+    "@aws-sdk/client-cognito-identity": "^1.0.0-alpha.11",
     "@aws-sdk/client-dynamodb": "^1.0.0-alpha.11",
+    "@aws-sdk/credential-provider-cognito-identity": "^1.0.0-alpha.9",
     "aws-sdk": "^2.609.0"
   }
 }
