@@ -23,7 +23,7 @@ const getHTMLElement = (title, content) => {
   return element;
 };
 
-async function componentV2() {
+const componentV2 = async () => {
   // Initialize the Amazon Cognito credentials provider
   AWS.config.region = REGION;
   AWS.config.credentials = new AWS.CognitoIdentityCredentials({
@@ -36,9 +36,9 @@ async function componentV2() {
     "Data returned by v2:",
     JSON.stringify(response, null, 2)
   );
-}
+};
 
-async function componentV3() {
+const componentV3 = async () => {
   const v3Client = new DynamoDB({
     region: REGION,
     credentials: fromCognitoIdentityPool({
@@ -55,7 +55,7 @@ async function componentV3() {
     "Data returned by v3:",
     JSON.stringify(response, null, 2)
   );
-}
+};
 
 (async () => {
   document.body.appendChild(await componentV2());
