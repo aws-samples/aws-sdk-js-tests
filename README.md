@@ -22,14 +22,13 @@ Code Sample for testing AWS JS SDK
 
 #### Browser:
 
-- Run `yarn webpack` to create browser bundle
 - Go through the following steps if you don't have resources created
   - [Create a Amazon Cognito Identity pool for testing](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/getting-started-browser.html#getting-started-browser-create-identity-pool)
-    - Note down REGION and IDENTITY_POOL_ID created
+    - Note down REGION and IDENTITY_POOL_ID
   - [Add a Policy to the test Unauthenticated IAM Role](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/getting-started-browser.html#getting-started-browser-iam-role)
     - The policy should be specific to the operations you want to test
   - Update the REGION and IDENTITY_POOL_ID in [`src/config.js`](./src/config.js)
-- Run `yarn webpack` to create the browser bundle and watch for changes
+- Run `yarn watch` to create the browser bundle and watch for changes
 - Open `index.html` in your browser, and note the responses printed on the page
 - The command will watch for changes in files, and update bundle. Reload the webpage to view the changes applied.
 
