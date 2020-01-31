@@ -8,10 +8,10 @@ const { REGION } = require("./config");
   const v2Client = new AWS.DynamoDB({ region: REGION });
   response = await v2Client.listTables().promise();
   console.log("Data returned by v2:");
-  console.log(response);
+  console.log(JSON.stringify(response, null, 2));
 
   const v3Client = new DynamoDB({ region: REGION });
   response = await v3Client.listTables({});
   console.log("\nData returned by v3:");
-  console.log(response);
+  console.log(JSON.stringify(response, null, 2));
 })();
