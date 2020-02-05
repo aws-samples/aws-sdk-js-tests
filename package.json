@@ -21,7 +21,7 @@
   "homepage": "https://github.com/aws-samples/aws-sdk-js-tests#readme",
   "devDependencies": {
     "husky": ">=1",
-    "lint-staged": ">=8",
+    "lint-staged": ">=10.0.7",
     "prettier": "1.19.1",
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10"
@@ -35,9 +35,9 @@
     "*.{js,css,json,md}": "prettier --write"
   },
   "dependencies": {
-    "@aws-sdk/client-cognito-identity": "^1.0.0-alpha.11",
-    "@aws-sdk/client-dynamodb": "^1.0.0-alpha.11",
-    "@aws-sdk/credential-provider-cognito-identity": "^1.0.0-alpha.9",
-    "aws-sdk": "^2.609.0"
+    "@aws-sdk/client-cognito-identity": "^1.0.0-alpha.15",
+    "@aws-sdk/client-dynamodb": "^1.0.0-alpha.15",
+    "@aws-sdk/credential-provider-cognito-identity": "^1.0.0-alpha.13",
+    "aws-sdk": "^2.612.0"
   }
 }
