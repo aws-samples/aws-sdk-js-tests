@@ -43,8 +43,7 @@ const componentV3 = async () => {
     region: REGION,
     credentials: fromCognitoIdentityPool({
       client: new CognitoIdentityClient({
-        region: REGION,
-        credentials: () => Promise.resolve({})
+        region: REGION
       }),
       identityPoolId: IDENTITY_POOL_ID
     })
