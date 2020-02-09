@@ -46,13 +46,13 @@
     "@aws-sdk/types" "^1.0.0-alpha.4"
     tslib "^1.8.0"
 
-"@aws-sdk/client-cognito-identity@^1.0.0-alpha.16":
-  version "1.0.0-alpha.16"
-  resolved "https://registry.yarnpkg.com/@aws-sdk/client-cognito-identity/-/client-cognito-identity-1.0.0-alpha.16.tgz#efc37614c091af44ece085f9ff076b378f89ca2a"
-  integrity sha512-EYD21byzH49mvkZJhZEtX+mpv+AUUjbunrQqPIX1h1jm8z7tHAbjFwy7C7CBLRJ40ugwXrnPyF4ERDjZMbdLBw==
+"@aws-sdk/client-cognito-identity@^1.0.0-alpha.18":
+  version "1.0.0-alpha.18"
+  resolved "https://registry.yarnpkg.com/@aws-sdk/client-cognito-identity/-/client-cognito-identity-1.0.0-alpha.18.tgz#ae167de38c135db3ab40b9567bc0f2f534a693b6"
+  integrity sha512-LF54Ue2fIAAE71X5j27JnkL/zmyJwlCKLMNyS9acAWu9qhBQk//coanQnqaf/UOnlZl67TCA6CRAd2ZhFbfrxA==
   dependencies:
     "@aws-crypto/sha256-browser" "^0.1.0-preview.4"
-    "@aws-sdk/config-resolver" "^1.0.0-alpha.9"
+    "@aws-sdk/config-resolver" "^1.0.0-alpha.10"
     "@aws-sdk/credential-provider-node" "^1.0.0-alpha.5"
     "@aws-sdk/fetch-http-handler" "^1.0.0-alpha.6"
     "@aws-sdk/hash-node" "^1.0.0-alpha.4"
@@ -61,7 +61,7 @@
     "@aws-sdk/middleware-host-header" "^1.0.0-alpha.6"
     "@aws-sdk/middleware-retry" "^1.0.0-alpha.6"
     "@aws-sdk/middleware-serde" "^1.0.0-alpha.4"
-    "@aws-sdk/middleware-signing" "^1.0.0-alpha.9"
+    "@aws-sdk/middleware-signing" "^1.0.0-alpha.11"
     "@aws-sdk/middleware-stack" "^1.0.0-alpha.4"
     "@aws-sdk/middleware-user-agent" "^1.0.0-alpha.7"
     "@aws-sdk/node-http-handler" "^1.0.0-alpha.7"
@@ -83,13 +83,13 @@
     "@aws-sdk/util-utf8-node" "^1.0.0-alpha.2"
     tslib "^1.8.0"
 
-"@aws-sdk/client-dynamodb@^1.0.0-alpha.16":
-  version "1.0.0-alpha.16"
-  resolved "https://registry.yarnpkg.com/@aws-sdk/client-dynamodb/-/client-dynamodb-1.0.0-alpha.16.tgz#0f5132ef0d594123a826311d7de24621cfe8083d"
-  integrity sha512-10925jjm0F/h3OSLQ47Cj5HJmmZB2nM8I4nvoAl5wHoF4NB8v8cnrYPwQ2G5CbnD9boVDv6P2Ym77LS9sxOvXg==
+"@aws-sdk/client-dynamodb@^1.0.0-alpha.18":
+  version "1.0.0-alpha.18"
+  resolved "https://registry.yarnpkg.com/@aws-sdk/client-dynamodb/-/client-dynamodb-1.0.0-alpha.18.tgz#e17eaf04e31749e725a9f05b863d163945667ee3"
+  integrity sha512-a1ITW9QX4gBKEiF3bxrY4sIBEJiQGvvPjzCF3JLXNoZgmrMW3vvTk5WhmMSItNLE8e893YLbidSkwuqzUdtJ3w==
   dependencies:
     "@aws-crypto/sha256-browser" "^0.1.0-preview.4"
-    "@aws-sdk/config-resolver" "^1.0.0-alpha.9"
+    "@aws-sdk/config-resolver" "^1.0.0-alpha.10"
     "@aws-sdk/credential-provider-node" "^1.0.0-alpha.5"
     "@aws-sdk/fetch-http-handler" "^1.0.0-alpha.6"
     "@aws-sdk/hash-node" "^1.0.0-alpha.4"
@@ -98,7 +98,7 @@
     "@aws-sdk/middleware-host-header" "^1.0.0-alpha.6"
     "@aws-sdk/middleware-retry" "^1.0.0-alpha.6"
     "@aws-sdk/middleware-serde" "^1.0.0-alpha.4"
-    "@aws-sdk/middleware-signing" "^1.0.0-alpha.9"
+    "@aws-sdk/middleware-signing" "^1.0.0-alpha.11"
     "@aws-sdk/middleware-stack" "^1.0.0-alpha.4"
     "@aws-sdk/middleware-user-agent" "^1.0.0-alpha.7"
     "@aws-sdk/node-http-handler" "^1.0.0-alpha.7"
@@ -121,21 +121,21 @@
     tslib "^1.8.0"
     uuid "^3.4.0"
 
-"@aws-sdk/config-resolver@^1.0.0-alpha.9":
-  version "1.0.0-alpha.9"
-  resolved "https://registry.yarnpkg.com/@aws-sdk/config-resolver/-/config-resolver-1.0.0-alpha.9.tgz#26b5af2a39b7bda813ede96ce6b56d249573f759"
-  integrity sha512-MblSfl/sTX8CMtU+Jq5Zx1v4Hn7Yr/ky52H4HsKYPPyyKP+INgK4mrrLUYf27N9k/DlryUhbKpHFBDafK++CDg==
+"@aws-sdk/config-resolver@^1.0.0-alpha.10":
+  version "1.0.0-alpha.10"
+  resolved "https://registry.yarnpkg.com/@aws-sdk/config-resolver/-/config-resolver-1.0.0-alpha.10.tgz#7e21d25bb3103b997d75e0c3053e7d7fa33d5f17"
+  integrity sha512-ZaNW8n6NDirec/JgnyG2IsmCzm8r9ol//W5ZRLESm7gIyQzjJEn44Fa7iQrsp1ud4u2aUrXDmI+IDIMG8BnxIQ==
   dependencies:
-    "@aws-sdk/signature-v4" "^1.0.0-alpha.9"
+    "@aws-sdk/signature-v4" "^1.0.0-alpha.10"
     "@aws-sdk/types" "^1.0.0-alpha.4"
     tslib "^1.8.0"
 
-"@aws-sdk/credential-provider-cognito-identity@^1.0.0-alpha.14":
-  version "1.0.0-alpha.14"
-  resolved "https://registry.yarnpkg.com/@aws-sdk/credential-provider-cognito-identity/-/credential-provider-cognito-identity-1.0.0-alpha.14.tgz#17a3ae1fdc0375df0c08d7e390a261e2bbee2478"
-  integrity sha512-t/uM1A0LKvCFGOYQIkeBuKCry9fNC8/LhIrmN2yOrZH5pRC+BAFP1W9Semkhu/uefSLlq0wsM/cJWoCB/d7wxw==
+"@aws-sdk/credential-provider-cognito-identity@^1.0.0-alpha.16":
+  version "1.0.0-alpha.16"
+  resolved "https://registry.yarnpkg.com/@aws-sdk/credential-provider-cognito-identity/-/credential-provider-cognito-identity-1.0.0-alpha.16.tgz#3f53622be1d2a0409dfc3d3eef2fd8ad6e5c627f"
+  integrity sha512-PzoxA0qjjCImrpQWlJDrhePLRNOiIOe98s+H8sLuZxn6q0pugicXUxX7N3KyiN00k5IaOLBfIlbbYJPTDZZs5A==
   dependencies:
-    "@aws-sdk/client-cognito-identity" "^1.0.0-alpha.16"
+    "@aws-sdk/client-cognito-identity" "^1.0.0-alpha.18"
     "@aws-sdk/property-provider" "^1.0.0-alpha.4"
     "@aws-sdk/types" "^1.0.0-alpha.4"
     tslib "^1.8.0"
@@ -260,13 +260,13 @@
     "@aws-sdk/types" "^1.0.0-alpha.4"
     tslib "^1.8.0"
 
-"@aws-sdk/middleware-signing@^1.0.0-alpha.9":
-  version "1.0.0-alpha.9"
-  resolved "https://registry.yarnpkg.com/@aws-sdk/middleware-signing/-/middleware-signing-1.0.0-alpha.9.tgz#d18a9ccdbf08c883a2c6efdf113b69fd0f07f1a1"
-  integrity sha512-8FANR3pJdl7PpE2OqbR8gnj83qkl+SeLoPznL4Z7om2RNXI8daRHT/uJMWIy2FouZL/o2s6Oftl2pttL8w3YlA==
+"@aws-sdk/middleware-signing@^1.0.0-alpha.11":
+  version "1.0.0-alpha.11"
+  resolved "https://registry.yarnpkg.com/@aws-sdk/middleware-signing/-/middleware-signing-1.0.0-alpha.11.tgz#fde67126cc6e7765bd10c1f471f90b82ea78b47b"
+  integrity sha512-Y1hVzfN3ozVdpRLsD7icmQLO4etJ4GOjpyu/SbuyHIO253TClNFPJeLaFvSna277PcJrGKAu57RHtd+biiBcBQ==
   dependencies:
     "@aws-sdk/protocol-http" "^1.0.0-alpha.6"
-    "@aws-sdk/signature-v4" "^1.0.0-alpha.9"
+    "@aws-sdk/signature-v4" "^1.0.0-alpha.10"
     "@aws-sdk/types" "^1.0.0-alpha.4"
     tslib "^1.8.0"
 
@@ -354,10 +354,10 @@
   dependencies:
     tslib "^1.8.0"
 
-"@aws-sdk/signature-v4@^1.0.0-alpha.9":
-  version "1.0.0-alpha.9"
-  resolved "https://registry.yarnpkg.com/@aws-sdk/signature-v4/-/signature-v4-1.0.0-alpha.9.tgz#cf98152b61e0a5e14d912946efdb358cd7bf3af0"
-  integrity sha512-zUgYfX7d6Dcby+4WhbsPgyqj2iV50vCYa5RJgbE6fi/7H8n1LoLhRSEK20moX4vBMnKJZgY7Ch3tsx50RLRDOw==
+"@aws-sdk/signature-v4@^1.0.0-alpha.10":
+  version "1.0.0-alpha.10"
+  resolved "https://registry.yarnpkg.com/@aws-sdk/signature-v4/-/signature-v4-1.0.0-alpha.10.tgz#273315357247f13b08b733066f82a354faaf862d"
+  integrity sha512-g0jar28Ly438V2aQNuNPYAcZ7G0twokoItRQJ9fucGTSV2O0YwAY16dUPPhKfmuKrjilWfh2RYbRkjUZKkYaRw==
   dependencies:
     "@aws-sdk/is-array-buffer" "^1.0.0-alpha.2"
     "@aws-sdk/types" "^1.0.0-alpha.4"
