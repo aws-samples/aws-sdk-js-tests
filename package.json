@@ -4,9 +4,7 @@
   "description": "Code Sample for testing AWS JS SDK",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
-    "watch": "webpack --mode development --watch src/browser/index.js -o dist/main.js"
+    "start:dev": "webpack-dev-server"
   },
   "repository": {
     "type": "git",
@@ -24,7 +22,8 @@
     "lint-staged": ">=10.0.7",
     "prettier": "1.19.1",
     "webpack": "^4.41.5",
-    "webpack-cli": "^3.3.10"
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.3"
   },
   "husky": {
     "hooks": {
