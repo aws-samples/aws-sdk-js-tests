@@ -6,8 +6,22 @@ Code Sample for testing AWS JS SDK
 
 - Fork this repo, and clone your fork
 - Create a local branch in your workspace
-- Add the code for testing AWS JS SDK v2/v3
-- Push code to remote branch on your fork, and share the code for reproducing
+- Update the code for testing AWS JS SDK v2/v3
+  - The SDK clients are created and API calls are made in [`src/shared/utils.js`](./src/shared/utils.js)
+  - For node.js, edit [`src/node/index.js`](./src/node/index.js)
+  - For browser, edit [`src/browser/index.js`](./src/browser/index.js)
+  - For react-native, edit [`src/reactnative/App.js`](./src/reactnative/App.js)
+- Push code to remote branch on your fork, and share the code for reproducing the issue
+
+### Pre-requisites
+
+- Update REGION in [`src/shared/config.js`](./src/shared/config.js)
+- For browser and react-native, IDENTITY_POOL_ID also needs to be updated
+  - [Create a Amazon Cognito Identity pool for testing](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/getting-started-browser.html#getting-started-browser-create-identity-pool)
+    - Note down IDENTITY_POOL_ID
+  - [Add a Policy to the test Unauthenticated IAM Role](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/getting-started-browser.html#getting-started-browser-iam-role)
+    - The policy should be specific to the operations you want to test
+  - Update the IDENTITY_POOL_ID in [`src/shared/config.js`](./src/shared/config.js)
 
 ### Example test for data returned by DynamoDB client:
 
@@ -16,25 +30,19 @@ Code Sample for testing AWS JS SDK
 
 #### Node.js:
 
-- Update REGION in [`src/shared/config.js`](./src/shared/config.js)
 - Run `yarn start:node` to run both v2 and v3 clients in Node.js
-- Note that responses returned by clients will be printed in console
+- The responses returned by clients will be printed in console, and will re-run when code is updated.
 
 #### Browser:
 
-- Go through the following steps if you don't have resources created
-  - [Create a Amazon Cognito Identity pool for testing](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/getting-started-browser.html#getting-started-browser-create-identity-pool)
-    - Note down REGION and IDENTITY_POOL_ID
-  - [Add a Policy to the test Unauthenticated IAM Role](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/getting-started-browser.html#getting-started-browser-iam-role)
-    - The policy should be specific to the operations you want to test
-  - Update the REGION and IDENTITY_POOL_ID in [`src/shared/config.js`](./src/shared/config.js)
-- Run `yarn start:browser` to start webpack-dev-server with HMR, which opens a bundle in default browser and updates the browser when changes are made
+- Run `yarn start:browser` to start webpack-dev-server with HMR
+- The bundle will be opened in default browser, and get refreshed when code is updated.
 
 #### React Native:
 
-- Follow steps in browser section to create and update REGION and IDENTITY_POOL_ID
-- Run `yarn start:react-native` to start local server for react-native app
-- Refer webpage to test in iOS simulator, Android device/emulator etc
+- Run `yarn start:react-native` to start local development server of Expo CLI
+- The Expo Dev Tools will open in default browser with an option to run iOS simulator, Android device/emulator etc.
+- The react-native app in simulator/emulator/web will refresh when code is updated.
 
 ## License
 
