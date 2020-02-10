@@ -30,6 +30,13 @@ Code Sample for testing AWS JS SDK
   - Update the REGION and IDENTITY_POOL_ID in [`src/shared/config.js`](./src/shared/config.js)
 - Run `yarn start:dev` to start webpack-dev-server with HMR, which opens a bundle in default browser and updates the browser when changes are made
 
+#### React Native:
+
+- Update steps in browser section to create and update REGION and IDENTITY_POOL_ID
+- `cd src/reactnative && yarn`
+- Run `yarn web` to run in web browser
+- Refer webpage to test in iOS simulator, Android device/emulator etc
+
 ## License
 
 This library is licensed under the MIT-0 License. See the LICENSE file.
