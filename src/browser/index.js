@@ -1,12 +1,7 @@
-const AWS = require("aws-sdk");
-
 const {
-  fromCognitoIdentityPool
-} = require("@aws-sdk/credential-provider-cognito-identity");
-const { CognitoIdentityClient } = require("@aws-sdk/client-cognito-identity");
-
-const { getV2Response, getV3Response } = require("../shared/utils");
-const { REGION, IDENTITY_POOL_ID } = require("../shared/config");
+  getV2BrowserResponse,
+  getV3BrowserResponse
+} = require("../shared/utils");
 
 const getHTMLElement = (title, content) => {
   const element = document.createElement("div");
@@ -26,13 +21,7 @@ const getHTMLElement = (title, content) => {
 };
 
 const componentV2 = async () => {
-  // Initialize the Amazon Cognito credentials provider
-  AWS.config.region = REGION;
-  AWS.config.credentials = new AWS.CognitoIdentityCredentials({
-    IdentityPoolId: IDENTITY_POOL_ID
-  });
-  const response = await getV2Response({ region: REGION });
-
+  const response = await getV2BrowserResponse();
   return getHTMLElement(
     "Data returned by v2:",
     JSON.stringify(response, null, 2)
@@ -40,15 +29,7 @@ const componentV2 = async () => {
 };
 
 const componentV3 = async () => {
-  const response = await getV3Response({
-    region: REGION,
-    credentials: fromCognitoIdentityPool({
-      client: new CognitoIdentityClient({
-        region: REGION
-      }),
-      identityPoolId: IDENTITY_POOL_ID
-    })
-  });
+  const response = await getV3BrowserResponse();
 
   return getHTMLElement(
     "Data returned by v3:",
