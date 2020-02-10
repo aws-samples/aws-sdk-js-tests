@@ -16,7 +16,7 @@ Code Sample for testing AWS JS SDK
 
 #### Node.js:
 
-- Update REGION in [`src/config.js`](./src/config.js)
+- Update REGION in [`src/shared/config.js`](./src/shared/config.js)
 - Run `node src/node.js` to run both v2 and v3 clients in Node.js
 - Note that responses returned by clients will be printed in console
 
@@ -27,7 +27,7 @@ Code Sample for testing AWS JS SDK
     - Note down REGION and IDENTITY_POOL_ID
   - [Add a Policy to the test Unauthenticated IAM Role](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/getting-started-browser.html#getting-started-browser-iam-role)
     - The policy should be specific to the operations you want to test
-  - Update the REGION and IDENTITY_POOL_ID in [`src/config.js`](./src/config.js)
+  - Update the REGION and IDENTITY_POOL_ID in [`src/shared/config.js`](./src/shared/config.js)
 - Run `yarn watch` to create the browser bundle and watch for changes
 - Open `index.html` in your browser, and note the responses printed on the page
 - The command will watch for changes in files, and update bundle. Reload the webpage to view the changes applied.
