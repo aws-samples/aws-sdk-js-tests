@@ -1,10 +1,12 @@
 const AWS = require("aws-sdk");
-const { DynamoDB } = require("@aws-sdk/client-dynamodb");
+
 const {
   fromCognitoIdentityPool
 } = require("@aws-sdk/credential-provider-cognito-identity");
 const { CognitoIdentityClient } = require("@aws-sdk/client-cognito-identity");
-const { REGION, IDENTITY_POOL_ID } = require("./config");
+
+const { getV2Response, getV3Response } = require("../shared/utils");
+const { REGION, IDENTITY_POOL_ID } = require("../shared/config");
 
 const getHTMLElement = (title, content) => {
   const element = document.createElement("div");
@@ -29,8 +31,7 @@ const componentV2 = async () => {
   AWS.config.credentials = new AWS.CognitoIdentityCredentials({
     IdentityPoolId: IDENTITY_POOL_ID
   });
-  const v2Client = new AWS.DynamoDB();
-  const response = await v2Client.listTables().promise();
+  const response = await getV2Response({ region: REGION });
 
   return getHTMLElement(
     "Data returned by v2:",
@@ -39,7 +40,7 @@ const componentV2 = async () => {
 };
 
 const componentV3 = async () => {
-  const v3Client = new DynamoDB({
+  const response = await getV3Response({
     region: REGION,
     credentials: fromCognitoIdentityPool({
       client: new CognitoIdentityClient({
@@ -48,7 +49,6 @@ const componentV3 = async () => {
       identityPoolId: IDENTITY_POOL_ID
     })
   });
-  const response = await v3Client.listTables({});
 
   return getHTMLElement(
     "Data returned by v3:",
