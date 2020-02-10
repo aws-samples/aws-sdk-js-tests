@@ -4,6 +4,7 @@
   "description": "Code Sample for testing AWS JS SDK",
   "private": true,
   "scripts": {
+    "start:node": "nodemon src/node/index.js",
     "start:browser": "webpack-dev-server",
     "start:react-native": "expo start --config src/reactnative/app.json"
   },
@@ -21,6 +22,7 @@
   "devDependencies": {
     "husky": ">=1",
     "lint-staged": ">=10.0.7",
+    "nodemon": "^2.0.2",
     "prettier": "1.19.1",
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10",
