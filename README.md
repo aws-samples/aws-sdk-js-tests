@@ -32,9 +32,8 @@ Code Sample for testing AWS JS SDK
 
 #### React Native:
 
-- Update steps in browser section to create and update REGION and IDENTITY_POOL_ID
-- `cd src/reactnative && yarn`
-- Run `yarn web` to run in web browser
+- Follow steps in browser section to create and update REGION and IDENTITY_POOL_ID
+- Run `yarn start:react-native` to start local server for react-native app
 - Refer webpage to test in iOS simulator, Android device/emulator etc
 
 ## License
