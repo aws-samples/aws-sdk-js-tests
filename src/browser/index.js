@@ -5,8 +5,8 @@ const {
 } = require("@aws-sdk/credential-provider-cognito-identity");
 const { CognitoIdentityClient } = require("@aws-sdk/client-cognito-identity");
 
-const { getV2Response, getV3Response } = require("./shared/utils");
-const { REGION, IDENTITY_POOL_ID } = require("./shared/config");
+const { getV2Response, getV3Response } = require("../shared/utils");
+const { REGION, IDENTITY_POOL_ID } = require("../shared/config");
 
 const getHTMLElement = (title, content) => {
   const element = document.createElement("div");
