@@ -28,7 +28,7 @@ Code Sample for testing AWS JS SDK
   - [Add a Policy to the test Unauthenticated IAM Role](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/getting-started-browser.html#getting-started-browser-iam-role)
     - The policy should be specific to the operations you want to test
   - Update the REGION and IDENTITY_POOL_ID in [`src/shared/config.js`](./src/shared/config.js)
-- Run `yarn start:dev` to start webpack-dev-server with HMR, which opens a bundle in default browser and updates the browser when changes are made
+- Run `yarn start:browser` to start webpack-dev-server with HMR, which opens a bundle in default browser and updates the browser when changes are made
 
 #### React Native:
 

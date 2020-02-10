@@ -4,7 +4,7 @@
   "description": "Code Sample for testing AWS JS SDK",
   "private": true,
   "scripts": {
-    "start:dev": "webpack-dev-server",
+    "start:browser": "webpack-dev-server",
     "start:react-native": "expo start --config src/reactnative/app.json"
   },
   "repository": {
