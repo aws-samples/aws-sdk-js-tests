@@ -17,7 +17,7 @@ Code Sample for testing AWS JS SDK
 #### Node.js:
 
 - Update REGION in [`src/shared/config.js`](./src/shared/config.js)
-- Run `node src/node.js` to run both v2 and v3 clients in Node.js
+- Run `node src/node/index.js` to run both v2 and v3 clients in Node.js
 - Note that responses returned by clients will be printed in console
 
 #### Browser:

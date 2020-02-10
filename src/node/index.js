@@ -1,5 +1,5 @@
-const { REGION } = require("./shared/config");
-const { getV2Response, getV3Response } = require("./shared/utils");
+const { REGION } = require("../shared/config");
+const { getV2Response, getV3Response } = require("../shared/utils");
 
 (async () => {
   let response;
