@@ -1,8 +1,8 @@
-## aws-sdk-js-tests
+# aws-sdk-js-tests
 
 Code Sample for testing AWS JS SDK
 
-### Steps to test:
+## Steps to test:
 
 - Fork this repo, and clone your fork
 - Create a local branch in your workspace
@@ -10,7 +10,7 @@ Code Sample for testing AWS JS SDK
   - The SDK clients are created and API calls are made in [`src/shared/utils.js`](./src/shared/utils.js)
 - Push code to remote branch on your fork, and share the code for reproducing the issue
 
-### Pre-requisites
+## Pre-requisites
 
 - Update REGION in [`src/shared/config.js`](./src/shared/config.js)
 - For browser and react-native, IDENTITY_POOL_ID also needs to be updated
@@ -20,24 +20,24 @@ Code Sample for testing AWS JS SDK
     - The policy should be specific to the operations you want to test
   - Update the IDENTITY_POOL_ID in [`src/shared/config.js`](./src/shared/config.js)
 
-### Example test for data returned by DynamoDB client:
+## Example test for data returned by DynamoDB client:
 
 - Checkout master branch: `git checkout master`
 - Run `yarn` to install dependencies
 
-#### Node.js:
+### Node.js:
 
 - Run `yarn start:node` to run both v2 and v3 clients in Node.js
 - The responses returned by clients will be printed in console, and will re-run when code is updated.
 - The file being run is at [`src/node/index.js`](./src/node/index.js)
 
-#### Browser:
+### Browser:
 
 - Run `yarn start:browser` to start webpack-dev-server with HMR
 - The bundle will be opened in default browser, and get refreshed when code is updated.
 - The file being run is at [`src/browser/index.js`](./src/browser/index.js)
 
-#### React Native:
+### React Native:
 
 - Run `yarn start:react-native` to start local development server of Expo CLI
 - The Expo Dev Tools will open in default browser with an option to run iOS simulator, Android device/emulator etc.
