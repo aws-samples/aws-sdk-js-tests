@@ -4,7 +4,8 @@
   "description": "Code Sample for testing AWS JS SDK",
   "private": true,
   "scripts": {
-    "start:dev": "webpack-dev-server"
+    "start:dev": "webpack-dev-server",
+    "start:react-native": "expo start --config src/reactnative/app.json"
   },
   "repository": {
     "type": "git",
@@ -37,6 +38,15 @@
     "@aws-sdk/client-cognito-identity": "^1.0.0-alpha.18",
     "@aws-sdk/client-dynamodb": "^1.0.0-alpha.18",
     "@aws-sdk/credential-provider-cognito-identity": "^1.0.0-alpha.16",
-    "aws-sdk": "^2.612.0"
+    "aws-sdk": "^2.612.0",
+    "expo": "~36.0.0",
+    "react": "~16.9.0",
+    "react-dom": "~16.9.0",
+    "react-native": "~0.61.4",
+    "react-native-gesture-handler": "~1.5.0",
+    "react-native-reanimated": "~1.4.0",
+    "react-native-screens": "2.0.0-alpha.12",
+    "react-native-unimodules": "~0.7.0",
+    "react-native-web": "~0.11.7"
   }
 }
