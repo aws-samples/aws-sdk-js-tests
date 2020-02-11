@@ -28,7 +28,7 @@ const getV2BrowserResponse = async () => {
   return getV2Response({ region: REGION });
 };
 
-const getV3BrowserResponse = async clientParams =>
+const getV3BrowserResponse = async () =>
   getV3Response({
     region: REGION,
     credentials: fromCognitoIdentityPool({
