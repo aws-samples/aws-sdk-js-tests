@@ -46,10 +46,10 @@
     "@aws-sdk/types" "^1.0.0-alpha.4"
     tslib "^1.8.0"
 
-"@aws-sdk/client-cognito-identity@^1.0.0-alpha.19":
-  version "1.0.0-alpha.19"
-  resolved "https://registry.yarnpkg.com/@aws-sdk/client-cognito-identity/-/client-cognito-identity-1.0.0-alpha.19.tgz#8a8b566c06e44595887c1e5c1caaaa1e87173667"
-  integrity sha512-rvu9a80jIBz6CtcjoPfbDhbcrghXT393Y6zkxa375gxpoSiWzZOdNYK2E8ejZcFkmPjIz3av7Wt99dXnsLx+dw==
+"@aws-sdk/client-cognito-identity@^1.0.0-alpha.20":
+  version "1.0.0-alpha.20"
+  resolved "https://registry.yarnpkg.com/@aws-sdk/client-cognito-identity/-/client-cognito-identity-1.0.0-alpha.20.tgz#09f3a5c539eeae442e897d17b7d0396ab6ba81c1"
+  integrity sha512-fGrJiEFHnel23Lx1+u0JEQe05RX2FBYXrw+tdgKGHTQtAw/cGRK8pgBV03JCIP3iFf1DEHXKLbbW9yrnhsyCIA==
   dependencies:
     "@aws-crypto/sha256-browser" "^1.0.0-alpha.0"
     "@aws-sdk/config-resolver" "^1.0.0-alpha.11"
@@ -67,7 +67,7 @@
     "@aws-sdk/node-http-handler" "^1.0.0-alpha.7"
     "@aws-sdk/protocol-http" "^1.0.0-alpha.6"
     "@aws-sdk/region-provider" "^1.0.0-alpha.4"
-    "@aws-sdk/smithy-client" "^1.0.0-alpha.5"
+    "@aws-sdk/smithy-client" "^1.0.0-alpha.6"
     "@aws-sdk/stream-collector-browser" "^1.0.0-alpha.4"
     "@aws-sdk/stream-collector-node" "^1.0.0-alpha.4"
     "@aws-sdk/stream-collector-rn" "^1.0.0-alpha.1"
@@ -84,10 +84,10 @@
     "@aws-sdk/util-utf8-node" "^1.0.0-alpha.2"
     tslib "^1.8.0"
 
-"@aws-sdk/client-dynamodb@^1.0.0-alpha.19":
-  version "1.0.0-alpha.19"
-  resolved "https://registry.yarnpkg.com/@aws-sdk/client-dynamodb/-/client-dynamodb-1.0.0-alpha.19.tgz#44663bf244543ffdb8758af383de433c7e78ae58"
-  integrity sha512-Vl9dBH8GI3uN71oJiOCKiZeE1VCWaebTiLjrvZcRsybBLA4tr4I+JvM1879XChM9q9OItCSMWTWSyCaj2dGE3w==
+"@aws-sdk/client-dynamodb@^1.0.0-alpha.20":
+  version "1.0.0-alpha.20"
+  resolved "https://registry.yarnpkg.com/@aws-sdk/client-dynamodb/-/client-dynamodb-1.0.0-alpha.20.tgz#4642be0c6e66065f5a6923aa701b718450774ed1"
+  integrity sha512-jsNVQcZTYFKNRSNcEiHA7Wnfpq2Hyt/GDBM85hWwpnSVdP2TjAG5Pwj+dXuK9tcQCR0nconSaDv8Q6bvyOMBhw==
   dependencies:
     "@aws-crypto/sha256-browser" "^1.0.0-alpha.0"
     "@aws-sdk/config-resolver" "^1.0.0-alpha.11"
@@ -105,7 +105,7 @@
     "@aws-sdk/node-http-handler" "^1.0.0-alpha.7"
     "@aws-sdk/protocol-http" "^1.0.0-alpha.6"
     "@aws-sdk/region-provider" "^1.0.0-alpha.4"
-    "@aws-sdk/smithy-client" "^1.0.0-alpha.5"
+    "@aws-sdk/smithy-client" "^1.0.0-alpha.6"
     "@aws-sdk/stream-collector-browser" "^1.0.0-alpha.4"
     "@aws-sdk/stream-collector-node" "^1.0.0-alpha.4"
     "@aws-sdk/stream-collector-rn" "^1.0.0-alpha.1"
@@ -132,12 +132,12 @@
     "@aws-sdk/types" "^1.0.0-alpha.4"
     tslib "^1.8.0"
 
-"@aws-sdk/credential-provider-cognito-identity@^1.0.0-alpha.17":
-  version "1.0.0-alpha.17"
-  resolved "https://registry.yarnpkg.com/@aws-sdk/credential-provider-cognito-identity/-/credential-provider-cognito-identity-1.0.0-alpha.17.tgz#43e918574e6484a9950f18cd46e94960dc86e117"
-  integrity sha512-1+02zqk2kZI50qLaZbVcjKGin2TaLsu6H3xeVgagXmxLpKjox1jNFcwtpqVejxxVkFvJ1g/3XaEOc1JbA2simA==
+"@aws-sdk/credential-provider-cognito-identity@^1.0.0-alpha.18":
+  version "1.0.0-alpha.18"
+  resolved "https://registry.yarnpkg.com/@aws-sdk/credential-provider-cognito-identity/-/credential-provider-cognito-identity-1.0.0-alpha.18.tgz#1d6a73192cd1e3233bf78388d0184253e1300eab"
+  integrity sha512-48ixNPkFyzxkOCvwDkHdgTBZ4kacipt2dzgo7FNiAWkmeScspY+T+XSt06lk9/mXxT4PHwekgJjRyApFbjChZw==
   dependencies:
-    "@aws-sdk/client-cognito-identity" "^1.0.0-alpha.19"
+    "@aws-sdk/client-cognito-identity" "^1.0.0-alpha.20"
     "@aws-sdk/property-provider" "^1.0.0-alpha.4"
     "@aws-sdk/types" "^1.0.0-alpha.4"
     tslib "^1.8.0"
@@ -366,10 +366,10 @@
     "@aws-sdk/util-hex-encoding" "^1.0.0-alpha.2"
     tslib "^1.8.0"
 
-"@aws-sdk/smithy-client@^1.0.0-alpha.5":
-  version "1.0.0-alpha.5"
-  resolved "https://registry.yarnpkg.com/@aws-sdk/smithy-client/-/smithy-client-1.0.0-alpha.5.tgz#166968ae901c312d1ff992d4b17af73978848908"
-  integrity sha512-oLbeS0E0r0pUGhDdjVr/VKsO9AfR9ZEJl3uS8RKBvwn+K7moxIezD/Q15x2DLJ8dBAapUbftQMP6AuVkAS7W5g==
+"@aws-sdk/smithy-client@^1.0.0-alpha.6":
+  version "1.0.0-alpha.6"
+  resolved "https://registry.yarnpkg.com/@aws-sdk/smithy-client/-/smithy-client-1.0.0-alpha.6.tgz#3a99af825e927cb6fcb9201c8eb7bba42b54e4b0"
+  integrity sha512-WS95EaBy48EytdMwU7vQEC+VdiGzppR3/93y3cyIMjgWn1XRdRwZVsUCN68eWebFgTcUrHQwW7pjhE2jPhbejw==
   dependencies:
     "@aws-sdk/middleware-stack" "^1.0.0-alpha.4"
     "@aws-sdk/types" "^1.0.0-alpha.4"
