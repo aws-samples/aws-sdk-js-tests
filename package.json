@@ -14,7 +14,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT-0",
   "bugs": {
     "url": "https://github.com/aws-samples/aws-sdk-js-tests/issues"
   },
