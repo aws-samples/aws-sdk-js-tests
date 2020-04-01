@@ -1,6 +1,6 @@
 const {
   getV2BrowserResponse,
-  getV3BrowserResponse
+  getV3BrowserResponse,
 } = require("../shared/utils");
 
 const getHTMLElement = (title, content) => {
