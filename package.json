@@ -41,7 +41,7 @@
     "@aws-sdk/client-dynamodb": "^1.0.0-gamma.2",
     "@aws-sdk/credential-provider-cognito-identity": "^1.0.0-gamma.2",
     "aws-sdk": "^2.612.0",
-    "expo": "~36.0.0",
+    "expo": "~37.0.12",
     "react": "~16.9.0",
     "react-dom": "~16.9.0",
     "react-native": "~0.62.2",
