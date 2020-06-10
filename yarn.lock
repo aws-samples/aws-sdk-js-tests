@@ -46,7 +46,7 @@
     "@aws-sdk/types" "1.0.0-gamma.1"
     tslib "^1.8.0"
 
-"@aws-sdk/client-cognito-identity@^1.0.0-beta.1":
+"@aws-sdk/client-cognito-identity@1.0.0-gamma.2", "@aws-sdk/client-cognito-identity@^1.0.0-gamma.2":
   version "1.0.0-gamma.2"
   resolved "https://registry.yarnpkg.com/@aws-sdk/client-cognito-identity/-/client-cognito-identity-1.0.0-gamma.2.tgz#c5c7ba2180813821cf94ef8365e1a7ead306e3a9"
   integrity sha512-gGwTrKRN+mj48m4tXTilTbp1/aYO5mGIBPocDsG7digNFqxmjzFVNCq/yJfoBg7MCNBVlOFJ7i3bxM6H4cylow==
@@ -128,14 +128,14 @@
     "@aws-sdk/types" "1.0.0-gamma.1"
     tslib "^1.8.0"
 
-"@aws-sdk/credential-provider-cognito-identity@^1.0.0-beta.1":
-  version "1.0.0-beta.1"
-  resolved "https://registry.yarnpkg.com/@aws-sdk/credential-provider-cognito-identity/-/credential-provider-cognito-identity-1.0.0-beta.1.tgz#a9a39a5254006b7147648a7da1f29128dd8a040f"
-  integrity sha512-uXtDOlKfE+SvPoEM9FQNEwDMTnepjanU0xS6oRNkF2NwP3E85NlAWaNlfspA0S4VcDdnq8mLDdNmIwJ9aMX6AQ==
+"@aws-sdk/credential-provider-cognito-identity@^1.0.0-gamma.2":
+  version "1.0.0-gamma.2"
+  resolved "https://registry.yarnpkg.com/@aws-sdk/credential-provider-cognito-identity/-/credential-provider-cognito-identity-1.0.0-gamma.2.tgz#59c40d74fda51aca1f0841769fc37f19ee7df0ef"
+  integrity sha512-mQSWij2FeyTnJqSwVOVxB6EqIxP0JfSk31wplRMwIFs1JEe2s4CbR6WkgfJdwBfK+uTbZGyR24EtUtlQiSP5zw==
   dependencies:
-    "@aws-sdk/client-cognito-identity" "^1.0.0-beta.1"
-    "@aws-sdk/property-provider" "^1.0.0-beta.1"
-    "@aws-sdk/types" "^1.0.0-beta.1"
+    "@aws-sdk/client-cognito-identity" "1.0.0-gamma.2"
+    "@aws-sdk/property-provider" "1.0.0-gamma.1"
+    "@aws-sdk/types" "1.0.0-gamma.1"
     tslib "^1.8.0"
 
 "@aws-sdk/credential-provider-env@1.0.0-gamma.1":
@@ -304,14 +304,6 @@
     "@aws-sdk/types" "1.0.0-gamma.1"
     tslib "^1.8.0"
 
-"@aws-sdk/property-provider@^1.0.0-beta.1":
-  version "1.0.0-beta.1"
-  resolved "https://registry.yarnpkg.com/@aws-sdk/property-provider/-/property-provider-1.0.0-beta.1.tgz#5c5e4abd21ac7b72c2a2b895ca97c58747666b1b"
-  integrity sha512-lsTMg//3yVo6rHL0hAJwLbb96Ix3AxRiX8UnU89H1dAiybjso1hlopOXRnE76Iwc4ijVxGbBOw+8vEluchq5Pw==
-  dependencies:
-    "@aws-sdk/types" "^1.0.0-beta.1"
-    tslib "^1.8.0"
-
 "@aws-sdk/protocol-http@1.0.0-gamma.1":
   version "1.0.0-gamma.1"
   resolved "https://registry.yarnpkg.com/@aws-sdk/protocol-http/-/protocol-http-1.0.0-gamma.1.tgz#4a70e8fc9cd893a0773ea52333a25251564be7b1"
@@ -379,7 +371,7 @@
     "@aws-sdk/types" "1.0.0-gamma.1"
     tslib "^1.8.0"
 
-"@aws-sdk/types@1.0.0-gamma.1", "@aws-sdk/types@^1.0.0-alpha.0", "@aws-sdk/types@^1.0.0-beta.1":
+"@aws-sdk/types@1.0.0-gamma.1", "@aws-sdk/types@^1.0.0-alpha.0":
   version "1.0.0-gamma.1"
   resolved "https://registry.yarnpkg.com/@aws-sdk/types/-/types-1.0.0-gamma.1.tgz#4b8ff4c75545750750dfb8af9d434ee3e67600d0"
   integrity sha512-K41IMXfj4lCNVjvWarJR7TNaP0sOh6hmbV3fDw9zReZ0t6ehQ4CY9JO2XQEWKnR6njyggmpbi/xNM924HYsgTg==
