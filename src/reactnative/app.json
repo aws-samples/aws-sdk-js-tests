@@ -3,11 +3,9 @@
   "displayName": "expo",
   "expo": {
     "name": "expo",
-    "slug": "expo-template-bare",
-    "privacy": "unlisted",
-    "sdkVersion": "36.0.0",
+    "slug": "expo",
     "version": "1.0.0",
     "entryPoint": "src/reactnative/AppEntry.js",
-    "platforms": ["ios", "android", "web"]
+    "assetBundlePatterns": ["**/*"]
   }
 }

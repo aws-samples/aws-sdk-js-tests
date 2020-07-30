@@ -42,14 +42,17 @@
     "@aws-sdk/client-dynamodb": "^1.0.0-gamma.2",
     "@aws-sdk/credential-provider-cognito-identity": "^1.0.0-gamma.2",
     "aws-sdk": "^2.717.0",
-    "expo": "~38.0.8",
-    "react": "~16.13.1",
-    "react-dom": "~16.13.1",
-    "react-native": "~0.63.2",
-    "react-native-gesture-handler": "~1.6.0",
+    "expo": "~38.0.1",
+    "expo-splash-screen": "~0.4.0",
+    "expo-status-bar": "^1.0.0",
+    "expo-updates": "~0.2.10",
+    "react": "~16.11.0",
+    "react-dom": "~16.11.0",
+    "react-native": "~0.62.2",
+    "react-native-gesture-handler": "~1.6.1",
     "react-native-reanimated": "~1.9.0",
-    "react-native-screens": "2.9.0",
+    "react-native-screens": "~2.9.0",
     "react-native-unimodules": "~0.10.1",
-    "react-native-web": "~0.13.4"
+    "react-native-web": "~0.11.7"
   }
 }

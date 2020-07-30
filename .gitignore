@@ -22,11 +22,6 @@ DerivedData
 *.xcuserstate
 project.xcworkspace
 
-# We recommend against adding the Pods directory to your .gitignore. However
-# you should judge for yourself, the pros and cons are mentioned at:
-# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-ignore-the-pods-directory-in-source-control
-Pods/
-
 # Android/IntelliJ
 #
 build/
@@ -34,6 +29,12 @@ build/
 .gradle
 local.properties
 *.iml
+
+# node.js
+#
+node_modules/
+npm-debug.log
+yarn-error.log
 
 # BUCK
 buck-out/
@@ -51,11 +52,15 @@ buck-out/
 */fastlane/Preview.html
 */fastlane/screenshots
 
-# Bundle artifact
+# Bundle artifacts
 *.jsbundle
 
-# Expo folders
-.expo
+# CocoaPods
+/ios/Pods/
+
+# Expo
+.expo/*
+web-build/
 
 # Logs
 logs
