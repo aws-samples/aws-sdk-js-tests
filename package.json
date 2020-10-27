@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/aws-samples/aws-sdk-js-tests#readme",
   "devDependencies": {
+    "expo": "~37.0.12",
+    "expo-cli": "^3.28.2",
     "husky": ">=1",
     "lint-staged": ">=10.0.7",
     "nodemon": "^2.0.4",
@@ -41,7 +43,6 @@
     "@aws-sdk/client-dynamodb": "^1.0.0-rc.2",
     "@aws-sdk/credential-provider-cognito-identity": "^1.0.0-rc.2",
     "aws-sdk": "^2.777.0",
-    "expo": "~37.0.12",
     "react": "~16.9.0",
     "react-dom": "~16.9.0",
     "react-native": "~0.62.2",
