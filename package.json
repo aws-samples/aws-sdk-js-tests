@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/aws-samples/aws-sdk-js-tests#readme",
   "devDependencies": {
+    "expo-cli": "^3.28.2",
     "husky": ">=1",
     "lint-staged": ">=10.0.7",
     "nodemon": "^2.0.4",
