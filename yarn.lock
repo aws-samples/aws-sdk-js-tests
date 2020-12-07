@@ -45,7 +45,7 @@
   dependencies:
     tslib "^1.8.0"
 
-"@aws-sdk/client-cognito-identity@1.0.0-rc.8", "@aws-sdk/client-cognito-identity@^1.0.0-rc.8":
+"@aws-sdk/client-cognito-identity@1.0.0-rc.8":
   version "1.0.0-rc.8"
   resolved "https://registry.yarnpkg.com/@aws-sdk/client-cognito-identity/-/client-cognito-identity-1.0.0-rc.8.tgz#9595c5dcfe90c7b9c7d72a717062df33f8893f44"
   integrity sha512-mFXCUsIWRS0cKr+8NROzCiktQavPIM6lGBO5DH7SaL8ccNcmyDY4byNa5cUVsOikkWMKg3EagGm7W0q0/EN3DQ==
@@ -81,7 +81,7 @@
     "@aws-sdk/util-utf8-node" "1.0.0-rc.8"
     tslib "^2.0.0"
 
-"@aws-sdk/client-dynamodb@^1.0.0-rc.8":
+"@aws-sdk/client-dynamodb@1.0.0-rc.8":
   version "1.0.0-rc.8"
   resolved "https://registry.yarnpkg.com/@aws-sdk/client-dynamodb/-/client-dynamodb-1.0.0-rc.8.tgz#6cf66ce8ddc1a28404caf49f2fd0ec7fad1ab81f"
   integrity sha512-sE03ucEzq8k+pRQjneFukaGKxrRH6mW3esmW7doj8aRFO4EncCHJZfbO4SE9MCYngKVPmMsXnV8aV9Z34PvTxQ==
@@ -126,7 +126,7 @@
     "@aws-sdk/signature-v4" "1.0.0-rc.8"
     tslib "^1.8.0"
 
-"@aws-sdk/credential-provider-cognito-identity@^1.0.0-rc.8":
+"@aws-sdk/credential-provider-cognito-identity@1.0.0-rc.8":
   version "1.0.0-rc.8"
   resolved "https://registry.yarnpkg.com/@aws-sdk/credential-provider-cognito-identity/-/credential-provider-cognito-identity-1.0.0-rc.8.tgz#b73d4abcb691a97ea65823b86e319c61b39f128d"
   integrity sha512-suYmNmt4nXr8l8eQZ4gYGP6gDogPpCNRJXzkafqs74oMJxfzPJGuq8gWTM9rgOc8QV3NRQ4oV5OgazN3jzqHOQ==
@@ -4485,7 +4485,7 @@ available-typed-arrays@^1.0.0, available-typed-arrays@^1.0.2:
   dependencies:
     array-filter "^1.0.0"
 
-aws-sdk@^2.804.0:
+aws-sdk@2.804.0:
   version "2.804.0"
   resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.804.0.tgz#ff7e6f91b86b4878ec69e3de895c10eb8203fc4b"
   integrity sha512-a02pZdjL06MunElAZPPEjpghOp/ZA+16f+t4imh1k9FCDpsNVQrT23HRq/PMvRADA5uZZRkYwX8r9o6oH/1RlA==
