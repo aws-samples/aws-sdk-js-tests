@@ -19,17 +19,7 @@
     "url": "https://github.com/aws-samples/aws-sdk-js-tests/issues"
   },
   "homepage": "https://github.com/aws-samples/aws-sdk-js-tests#readme",
-  "devDependencies": {
-    "expo": "~37.0.12",
-    "expo-cli": "^3.28.2",
-    "husky": ">=1",
-    "lint-staged": ">=10.0.7",
-    "nodemon": "^2.0.4",
-    "prettier": "2.0.2",
-    "webpack": "^4.44.1",
-    "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.0"
-  },
+  "devDependencies": {},
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
@@ -37,19 +27,5 @@
   },
   "lint-staged": {
     "*.{js,css,json,md}": "prettier --write"
-  },
-  "dependencies": {
-    "@aws-sdk/client-cognito-identity": "3.0.0",
-    "@aws-sdk/client-dynamodb": "3.0.0",
-    "@aws-sdk/credential-provider-cognito-identity": "3.0.0",
-    "aws-sdk": "2.811.0",
-    "react": "~16.9.0",
-    "react-dom": "~16.9.0",
-    "react-native": "~0.62.2",
-    "react-native-gesture-handler": "~1.6.1",
-    "react-native-reanimated": "~1.9.0",
-    "react-native-screens": "2.8.0",
-    "react-native-unimodules": "~0.9.1",
-    "react-native-web": "~0.12.3"
   }
 }
