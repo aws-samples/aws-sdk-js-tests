@@ -3,9 +3,15 @@
   "version": "1.0.0",
   "description": "Monorepo with code samples for testing AWS SDK for JavaScript",
   "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/react-native",
+      "**/react-native/**"
+    ]
+  },
   "scripts": {
     "start:node": "(cd packages/node && yarn start:node)",
     "start:browser": "(cd packages/browser && yarn start:browser)",
