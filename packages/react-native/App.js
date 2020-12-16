@@ -6,25 +6,34 @@
  * @flow strict-local
  */
 
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {
   SafeAreaView,
   StyleSheet,
   ScrollView,
   View,
   Text,
+  TextInput,
   StatusBar,
 } from 'react-native';
 
-import {
-  Header,
-  LearnMoreLinks,
-  Colors,
-  DebugInstructions,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
+import {Header, Colors} from 'react-native/Libraries/NewAppScreen';
+
+import {utils} from '@aws-sdk/test-utils';
+const {getV2BrowserResponse, getV3BrowserResponse} = utils;
 
 const App: () => React$Node = () => {
+  const [v2Response, setV2Response] = useState('');
+  const [v3Response, setV3Response] = useState('');
+
+  useEffect(async () => {
+    const v2Response = await getV2BrowserResponse();
+    const v3Response = await getV3BrowserResponse();
+
+    setV2Response(JSON.stringify(v2Response, null, 2));
+    setV3Response(JSON.stringify(v3Response, null, 2));
+  });
+
   return (
     <>
       <StatusBar barStyle="dark-content" />
@@ -40,31 +49,13 @@ const App: () => React$Node = () => {
           )}
           <View style={styles.body}>
             <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Step One</Text>
-              <Text style={styles.sectionDescription}>
-                Edit <Text style={styles.highlight}>App.js</Text> to change this
-                screen and then come back to see your edits.
-              </Text>
+              <Text style={styles.sectionTitle}>Data returned by v2:</Text>
+              <TextInput style={styles.sectionDescription} value={v2Response} />
             </View>
             <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>See Your Changes</Text>
-              <Text style={styles.sectionDescription}>
-                <ReloadInstructions />
-              </Text>
+              <Text style={styles.sectionTitle}>Data returned by v3:</Text>
+              <TextInput style={styles.sectionDescription} value={v3Response} />
             </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Debug</Text>
-              <Text style={styles.sectionDescription}>
-                <DebugInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Learn More</Text>
-              <Text style={styles.sectionDescription}>
-                Read the docs to discover what to do next:
-              </Text>
-            </View>
-            <LearnMoreLinks />
           </View>
         </ScrollView>
       </SafeAreaView>
