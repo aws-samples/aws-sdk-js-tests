@@ -2,6 +2,7 @@
   "name": "@aws-sdk/test-utils",
   "version": "1.0.0",
   "description": "Utils for testing AWS SDK for JavaScript",
+  "private": true,
   "main": "src/index.js",
   "license": "MIT-0",
   "dependencies": {

@@ -1,7 +1,8 @@
 {
   "name": "@aws-sdk/test-web",
   "version": "1.0.0",
-  "description": "Testing AWS SDK for JavaScript in web environment",
+  "description": "Code samples to test AWS SDK for JavaScript in web environment",
+  "private": true,
   "main": "src/index.js",
   "license": "MIT-0",
   "scripts": {
