@@ -3,7 +3,7 @@ const path = require("path");
 module.exports = {
   mode: "development",
   entry: {
-    main: "./src/browser/index.js",
+    main: "./src/index.js",
   },
   devServer: {
     contentBase: path.join(__dirname, "public"),
@@ -11,5 +11,10 @@ module.exports = {
     port: 9000,
     open: true,
     hot: true,
+  },
+  resolve: {
+    fallback: {
+      util: require.resolve("util/"),
+    },
   },
 };
