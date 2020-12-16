@@ -26,12 +26,15 @@ const App: () => React$Node = () => {
   const [v2Response, setV2Response] = useState('');
   const [v3Response, setV3Response] = useState('');
 
-  useEffect(async () => {
-    const v2Response = await getV2BrowserResponse();
-    const v3Response = await getV3BrowserResponse();
+  useEffect(() => {
+    async function fetchData() {
+      const v2Response = await getV2BrowserResponse();
+      const v3Response = await getV3BrowserResponse();
 
-    setV2Response(JSON.stringify(v2Response, null, 2));
-    setV3Response(JSON.stringify(v3Response, null, 2));
+      setV2Response(JSON.stringify(v2Response, null, 2));
+      setV3Response(JSON.stringify(v3Response, null, 2));
+    }
+    fetchData();
   });
 
   return (
