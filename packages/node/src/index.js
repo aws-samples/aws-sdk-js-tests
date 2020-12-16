@@ -1,5 +1,9 @@
-const { REGION } = require("../shared/config");
-const { getV2Response, getV3Response } = require("../shared/utils");
+const {
+  config: { REGION },
+} = require("@aws-sdk/test-utils");
+const {
+  utils: { getV2Response, getV3Response },
+} = require("@aws-sdk/test-utils");
 
 (async () => {
   let response;

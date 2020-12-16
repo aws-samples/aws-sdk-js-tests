@@ -1,0 +1,13 @@
+{
+  "name": "@aws-sdk/test-utils",
+  "version": "1.0.0",
+  "description": "Utils for testing AWS SDK for JavaScript",
+  "main": "src/index.js",
+  "license": "MIT-0",
+  "dependencies": {
+    "@aws-sdk/client-cognito-identity": "1.0.0-rc.10",
+    "@aws-sdk/client-dynamodb": "1.0.0-rc.10",
+    "@aws-sdk/credential-provider-cognito-identity": "1.0.0-rc.10",
+    "aws-sdk": "2.811.0"
+  }
+}

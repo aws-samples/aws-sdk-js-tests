@@ -1,0 +1,16 @@
+{
+  "name": "@aws-sdk/test-node",
+  "version": "1.0.0",
+  "description": "Testing AWS SDK for JavaScript in Node.js environment",
+  "main": "src/index.js",
+  "license": "MIT-0",
+  "scripts": {
+    "start:node": "nodemon src/index.js"
+  },
+  "dependencies": {
+    "@aws-sdk/test-utils": "*"
+  },
+  "devDependencies": {
+    "nodemon": "2.0.4"
+  }
+}
