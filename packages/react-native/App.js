@@ -6,15 +6,15 @@
  * @flow strict-local
  */
 
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import {
+  Button,
   SafeAreaView,
+  StatusBar,
   StyleSheet,
   ScrollView,
   View,
   Text,
-  TextInput,
-  StatusBar,
 } from 'react-native';
 
 import {Header, Colors} from 'react-native/Libraries/NewAppScreen';
@@ -26,16 +26,23 @@ const App: () => React$Node = () => {
   const [v2Response, setV2Response] = useState('');
   const [v3Response, setV3Response] = useState('');
 
-  useEffect(() => {
-    async function fetchData() {
+  const fetchV2Response = async () => {
+    try {
       const v2Response = await getV2BrowserResponse();
-      const v3Response = await getV3BrowserResponse();
-
       setV2Response(JSON.stringify(v2Response, null, 2));
-      setV3Response(JSON.stringify(v3Response, null, 2));
+    } catch (err) {
+      setV2Response(`Error: ${err}`);
     }
-    fetchData();
-  });
+  };
+
+  const fetchV3Response = async () => {
+    try {
+      const v3Response = await getV3BrowserResponse();
+      setV3Response(JSON.stringify(v3Response, null, 2));
+    } catch (err) {
+      setV3Response(`Error: ${err}`);
+    }
+  };
 
   return (
     <>
@@ -52,13 +59,21 @@ const App: () => React$Node = () => {
           )}
           <View style={styles.body}>
             <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Data returned by v2:</Text>
+              <Text style={styles.sectionTitle}>JS SDK v2:</Text>
+              <Button
+                title="Call listTables with JS SDK v2"
+                onPress={fetchV2Response}
+              />
               <ScrollView style={styles.scrollView}>
                 <Text style={styles.sectionDescription}>{v2Response}</Text>
               </ScrollView>
             </View>
             <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Data returned by v3:</Text>
+              <Text style={styles.sectionTitle}>JS SDK v3:</Text>
+              <Button
+                title="Call listTables with JS SDK v3"
+                onPress={fetchV3Response}
+              />
               <ScrollView style={styles.scrollView}>
                 <Text style={styles.sectionDescription}>{v3Response}</Text>
               </ScrollView>
