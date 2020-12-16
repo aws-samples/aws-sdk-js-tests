@@ -4,7 +4,6 @@
   "description": "Code samples to test AWS SDK for JavaScript in Node.js environment",
   "private": true,
   "main": "src/index.js",
-  "license": "MIT-0",
   "scripts": {
     "start:node": "nodemon src/index.js"
   },
@@ -13,5 +12,10 @@
   },
   "devDependencies": {
     "nodemon": "2.0.4"
-  }
+  },
+  "author": {
+    "name": "AWS SDK for JavaScript Team",
+    "url": "https://aws.amazon.com/javascript/"
+  },
+  "license": "MIT-0"
 }

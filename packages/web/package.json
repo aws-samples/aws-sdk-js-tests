@@ -4,7 +4,6 @@
   "description": "Code samples to test AWS SDK for JavaScript in web environment",
   "private": true,
   "main": "src/index.js",
-  "license": "MIT-0",
   "scripts": {
     "start:web": "webpack serve"
   },
@@ -16,5 +15,10 @@
     "webpack": "5.10.3",
     "webpack-cli": "4.2.0",
     "webpack-dev-server": "3.11.0"
-  }
+  },
+  "author": {
+    "name": "AWS SDK for JavaScript Team",
+    "url": "https://aws.amazon.com/javascript/"
+  },
+  "license": "MIT-0"
 }

@@ -1,6 +1,7 @@
 {
   "name": "@aws-sdk/test-react-native",
   "version": "1.0.0",
+  "description": "Code samples to test AWS SDK for JavaScript in React Native environment",
   "private": true,
   "scripts": {
     "android": "react-native run-android",
@@ -26,5 +27,10 @@
   },
   "jest": {
     "preset": "react-native"
-  }
+  },
+  "author": {
+    "name": "AWS SDK for JavaScript Team",
+    "url": "https://aws.amazon.com/javascript/"
+  },
+  "license": "MIT-0"
 }

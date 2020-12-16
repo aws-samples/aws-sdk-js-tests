@@ -23,7 +23,10 @@
     "url": "git+https://github.com/aws-samples/aws-sdk-js-tests.git"
   },
   "keywords": [],
-  "author": "",
+  "author": {
+    "name": "AWS SDK for JavaScript Team",
+    "url": "https://aws.amazon.com/javascript/"
+  },
   "license": "MIT-0",
   "bugs": {
     "url": "https://github.com/aws-samples/aws-sdk-js-tests/issues"

@@ -4,11 +4,15 @@
   "description": "Utils for testing AWS SDK for JavaScript",
   "private": true,
   "main": "src/index.js",
-  "license": "MIT-0",
   "dependencies": {
     "@aws-sdk/client-cognito-identity": "3.0.0",
     "@aws-sdk/client-dynamodb": "3.0.0",
     "@aws-sdk/credential-provider-cognito-identity": "3.0.0",
     "aws-sdk": "2.811.0"
-  }
+  },
+  "author": {
+    "name": "AWS SDK for JavaScript Team",
+    "url": "https://aws.amazon.com/javascript/"
+  },
+  "license": "MIT-0"
 }
