@@ -14,9 +14,9 @@
   },
   "scripts": {
     "start:node": "(cd packages/node && yarn start:node)",
-    "start:browser": "(cd packages/browser && yarn start:browser)",
-    "start:react-native:ios": "(cd packages/reactnative && yarn start:react-native:ios)",
-    "start:react-native:android": "(cd packages/reactnative && yarn start:react-native:android)"
+    "start:web": "(cd packages/web && yarn start:web)",
+    "start:ios": "(cd packages/react-native && yarn ios)",
+    "start:android": "(cd packages/react-native && yarn android)"
   },
   "repository": {
     "type": "git",

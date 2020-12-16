@@ -1,11 +1,11 @@
 {
-  "name": "@aws-sdk/test-browser",
+  "name": "@aws-sdk/test-web",
   "version": "1.0.0",
-  "description": "Testing AWS SDK for JavaScript in browser environment",
+  "description": "Testing AWS SDK for JavaScript in web environment",
   "main": "src/index.js",
   "license": "MIT-0",
   "scripts": {
-    "start:browser": "webpack serve"
+    "start:web": "webpack serve"
   },
   "dependencies": {
     "@aws-sdk/test-utils": "*",
