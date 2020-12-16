@@ -1,0 +1,24 @@
+{
+  "name": "@aws-sdk/test-utils",
+  "version": "1.0.0",
+  "description": "Utils for testing AWS SDK for JavaScript",
+  "private": true,
+  "main": "src/index.js",
+  "dependencies": {
+    "@aws-sdk/client-cognito-identity": "3.0.0",
+    "@aws-sdk/client-dynamodb": "3.0.0",
+    "@aws-sdk/credential-provider-cognito-identity": "3.0.0",
+    "aws-sdk": "2.811.0"
+  },
+  "author": {
+    "name": "AWS SDK for JavaScript Team",
+    "url": "https://aws.amazon.com/javascript/"
+  },
+  "license": "MIT-0",
+  "homepage": "https://github.com/aws-samples/aws-sdk-js-tests/tree/master/packages/utils",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aws-samples/aws-sdk-js-tests.git",
+    "directory": "packages/utils"
+  }
+}

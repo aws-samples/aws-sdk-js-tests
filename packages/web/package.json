@@ -1,0 +1,30 @@
+{
+  "name": "@aws-sdk/test-web",
+  "version": "1.0.0",
+  "description": "Code samples to test AWS SDK for JavaScript in web environment",
+  "private": true,
+  "main": "src/index.js",
+  "scripts": {
+    "start:web": "webpack serve"
+  },
+  "dependencies": {
+    "@aws-sdk/test-utils": "*",
+    "util": "0.12.3"
+  },
+  "devDependencies": {
+    "webpack": "5.10.3",
+    "webpack-cli": "4.2.0",
+    "webpack-dev-server": "3.11.0"
+  },
+  "author": {
+    "name": "AWS SDK for JavaScript Team",
+    "url": "https://aws.amazon.com/javascript/"
+  },
+  "license": "MIT-0",
+  "homepage": "https://github.com/aws-samples/aws-sdk-js-tests/tree/master/packages/web",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aws-samples/aws-sdk-js-tests.git",
+    "directory": "packages/web"
+  }
+}
