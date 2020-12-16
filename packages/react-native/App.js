@@ -53,11 +53,15 @@ const App: () => React$Node = () => {
           <View style={styles.body}>
             <View style={styles.sectionContainer}>
               <Text style={styles.sectionTitle}>Data returned by v2:</Text>
-              <TextInput style={styles.sectionDescription} value={v2Response} />
+              <ScrollView style={styles.scrollView}>
+                <Text style={styles.sectionDescription}>{v2Response}</Text>
+              </ScrollView>
             </View>
             <View style={styles.sectionContainer}>
               <Text style={styles.sectionTitle}>Data returned by v3:</Text>
-              <TextInput style={styles.sectionDescription} value={v3Response} />
+              <ScrollView style={styles.scrollView}>
+                <Text style={styles.sectionDescription}>{v3Response}</Text>
+              </ScrollView>
             </View>
           </View>
         </ScrollView>
