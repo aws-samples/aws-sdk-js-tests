@@ -28,6 +28,9 @@
   "jest": {
     "preset": "react-native"
   },
+  "installConfig": {
+    "hoistingLimits": "workspaces"
+  },
   "author": {
     "name": "AWS SDK for JavaScript Team",
     "url": "https://aws.amazon.com/javascript/"
