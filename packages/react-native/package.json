@@ -14,8 +14,8 @@
     "@aws-sdk/test-utils": "*"
   },
   "devDependencies": {
-    "@babel/core": "7.12.1",
-    "@babel/runtime": "7.12.1"
+    "@babel/core": "7.12.10",
+    "@babel/runtime": "7.12.5"
   },
   "author": {
     "name": "AWS SDK for JavaScript Team",
