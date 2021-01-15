@@ -9,6 +9,7 @@
 import React, {useState} from 'react';
 import {
   Button,
+  LogBox,
   SafeAreaView,
   StatusBar,
   StyleSheet,
@@ -21,6 +22,9 @@ import {Header, Colors} from 'react-native/Libraries/NewAppScreen';
 
 import {utils} from '@aws-sdk/test-utils';
 const {getV2BrowserResponse, getV3BrowserResponse} = utils;
+
+// Refs: https://github.com/facebook/metro/issues/287#issuecomment-738622439
+LogBox.ignoreLogs(['Require cycle: node_modules']);
 
 const App: () => React$Node = () => {
   const [v2Response, setV2Response] = useState('');
