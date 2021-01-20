@@ -21,7 +21,7 @@
     "url": "https://aws.amazon.com/javascript/"
   },
   "license": "MIT-0",
-  "homepage": "https://github.com/aws-samples/aws-sdk-js-tests/tree/master/packages/web",
+  "homepage": "https://github.com/aws-samples/aws-sdk-js-tests/tree/main/packages/web",
   "repository": {
     "type": "git",
     "url": "https://github.com/aws-samples/aws-sdk-js-tests.git",

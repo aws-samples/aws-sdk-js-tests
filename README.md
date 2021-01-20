@@ -22,7 +22,7 @@ Code Sample for testing AWS JS SDK
 
 ## Example test for data returned by DynamoDB client:
 
-- Checkout master branch: `git checkout master`
+- Checkout main branch: `git checkout main`
 - Run `yarn` to install dependencies
 
 ### Node.js:
