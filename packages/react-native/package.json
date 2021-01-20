@@ -22,7 +22,7 @@
     "url": "https://aws.amazon.com/javascript/"
   },
   "license": "MIT-0",
-  "homepage": "https://github.com/aws-samples/aws-sdk-js-tests/tree/master/packages/react-native",
+  "homepage": "https://github.com/aws-samples/aws-sdk-js-tests/tree/main/packages/react-native",
   "repository": {
     "type": "git",
     "url": "https://github.com/aws-samples/aws-sdk-js-tests.git",
