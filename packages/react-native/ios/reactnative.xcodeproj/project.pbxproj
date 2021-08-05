@@ -210,6 +210,7 @@
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
 				7A99DC48B547CD45A93E7884 /* [CP] Copy Pods Resources */,
+				BA0AC3919E9FDAA67CE15A7C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -232,6 +233,7 @@
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				D4A22221410C64FD29730AFD /* [CP] Copy Pods Resources */,
+				B3CF87E059FDA55333B4C6D4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -495,6 +497,42 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-reactnative-reactnativeTests/Pods-reactnative-reactnativeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3CF87E059FDA55333B4C6D4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-reactnative/Pods-reactnative-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL/OpenSSL.framework/OpenSSL",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenSSL.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-reactnative/Pods-reactnative-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA0AC3919E9FDAA67CE15A7C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-reactnative-reactnativeTests/Pods-reactnative-reactnativeTests-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL/OpenSSL.framework/OpenSSL",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenSSL.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-reactnative-reactnativeTests/Pods-reactnative-reactnativeTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D4A22221410C64FD29730AFD /* [CP] Copy Pods Resources */ = {
