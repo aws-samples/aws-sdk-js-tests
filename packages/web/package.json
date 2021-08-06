@@ -5,7 +5,7 @@
   "private": true,
   "main": "src/index.js",
   "scripts": {
-    "start:web": "webpack serve"
+    "start:web": "esbuild src/index.js --servedir=public --outdir=public --bundle --define:global=window"
   },
   "dependencies": {
     "@aws-sdk/test-utils": "workspace:*",
