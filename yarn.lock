@@ -465,7 +465,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@aws-sdk/test-node@workspace:packages/node"
   dependencies:
-    "@aws-sdk/test-utils": "*"
+    "@aws-sdk/test-utils": "workspace:*"
     nodemon: 2.0.4
   languageName: unknown
   linkType: soft
@@ -474,7 +474,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@aws-sdk/test-react-native@workspace:packages/react-native"
   dependencies:
-    "@aws-sdk/test-utils": "*"
+    "@aws-sdk/test-utils": "workspace:*"
     "@babel/core": ^7.8.4
     "@babel/runtime": ^7.8.4
     react: 17.0.2
@@ -482,7 +482,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@aws-sdk/test-utils@*, @aws-sdk/test-utils@workspace:packages/utils":
+"@aws-sdk/test-utils@workspace:*, @aws-sdk/test-utils@workspace:packages/utils":
   version: 0.0.0-use.local
   resolution: "@aws-sdk/test-utils@workspace:packages/utils"
   dependencies:
@@ -497,7 +497,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@aws-sdk/test-web@workspace:packages/web"
   dependencies:
-    "@aws-sdk/test-utils": "*"
+    "@aws-sdk/test-utils": "workspace:*"
     util: 0.12.3
     webpack: 5.10.3
     webpack-cli: 4.2.0

@@ -8,7 +8,7 @@
     "start:node": "nodemon src/index.js"
   },
   "dependencies": {
-    "@aws-sdk/test-utils": "*"
+    "@aws-sdk/test-utils": "workspace:*"
   },
   "devDependencies": {
     "nodemon": "2.0.4"

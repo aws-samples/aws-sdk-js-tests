@@ -9,7 +9,7 @@
     "start": "react-native start"
   },
   "dependencies": {
-    "@aws-sdk/test-utils": "*",
+    "@aws-sdk/test-utils": "workspace:*",
     "react": "17.0.2",
     "react-native": "0.64.2"
   },
