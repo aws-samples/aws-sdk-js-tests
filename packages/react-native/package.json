@@ -15,7 +15,8 @@
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",
-    "@babel/runtime": "^7.8.4"
+    "@babel/runtime": "^7.8.4",
+    "metro-react-native-babel-preset": "0.64.0"
   },
   "author": {
     "name": "AWS SDK for JavaScript Team",

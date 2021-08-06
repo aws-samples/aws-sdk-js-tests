@@ -477,6 +477,7 @@ __metadata:
     "@aws-sdk/test-utils": "workspace:*"
     "@babel/core": ^7.8.4
     "@babel/runtime": ^7.8.4
+    metro-react-native-babel-preset: 0.64.0
     react: 17.0.2
     react-native: 0.64.2
   languageName: unknown
