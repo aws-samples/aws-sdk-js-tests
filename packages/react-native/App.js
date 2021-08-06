@@ -67,21 +67,19 @@ const App: () => React$Node = () => {
           )}
           <View style={styles.body}>
             <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>JS SDK v2:</Text>
-              <Button
-                title="Call listTables with JS SDK v2"
-                onPress={fetchV2Response}
-              />
+              <Text style={styles.sectionTitle}>
+                AWS SDK for JavaScript (v2):
+              </Text>
+              <Button title="Call with v2" onPress={fetchV2Response} />
               <ScrollView style={styles.scrollView}>
                 <Text style={styles.sectionDescription}>{v2Response}</Text>
               </ScrollView>
             </View>
             <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>JS SDK v3:</Text>
-              <Button
-                title="Call listTables with JS SDK v3"
-                onPress={fetchV3Response}
-              />
+              <Text style={styles.sectionTitle}>
+                AWS SDK for JavaScript (v3):
+              </Text>
+              <Button title="Call with v3" onPress={fetchV3Response} />
               <ScrollView style={styles.scrollView}>
                 <Text style={styles.sectionDescription}>{v3Response}</Text>
               </ScrollView>
