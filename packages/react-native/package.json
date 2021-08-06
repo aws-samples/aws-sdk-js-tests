@@ -9,13 +9,14 @@
     "start": "react-native start"
   },
   "dependencies": {
-    "@aws-sdk/test-utils": "*",
+    "@aws-sdk/test-utils": "workspace:*",
     "react": "17.0.2",
     "react-native": "0.64.2"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",
-    "@babel/runtime": "^7.8.4"
+    "@babel/runtime": "^7.8.4",
+    "metro-react-native-babel-preset": "0.64.0"
   },
   "author": {
     "name": "AWS SDK for JavaScript Team",
@@ -27,5 +28,8 @@
     "type": "git",
     "url": "https://github.com/aws-samples/aws-sdk-js-tests.git",
     "directory": "packages/react-native"
+  },
+  "installConfig": {
+    "hoistingLimits": "workspaces"
   }
 }

@@ -4,10 +4,22 @@
  *
  * @format
  */
+const fs = require('fs');
 const path = require('path');
 
+const workspaces = fs.readdirSync(path.resolve(__dirname, '../'));
+const currentWorkspace = path.basename(__dirname);
+
 module.exports = {
-  watchFolders: [path.resolve(__dirname, '../..')],
+  projectRoot: __dirname,
+  resolver: {
+    extraNodeModules: new Proxy(
+      {},
+      {
+        get: (target, name) => path.join(__dirname, `node_modules/${name}`),
+      },
+    ),
+  },
   transformer: {
     getTransformOptions: async () => ({
       transform: {
@@ -16,4 +28,7 @@ module.exports = {
       },
     }),
   },
+  watchFolders: workspaces
+    .filter((f) => f !== currentWorkspace)
+    .map((f) => path.join(__dirname, '../', f)),
 };

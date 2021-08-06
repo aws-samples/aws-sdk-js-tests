@@ -8,7 +8,7 @@
     "start:web": "webpack serve"
   },
   "dependencies": {
-    "@aws-sdk/test-utils": "*",
+    "@aws-sdk/test-utils": "workspace:*",
     "util": "0.12.3"
   },
   "devDependencies": {

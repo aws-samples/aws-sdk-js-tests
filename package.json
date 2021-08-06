@@ -6,10 +6,6 @@
   "workspaces": {
     "packages": [
       "packages/*"
-    ],
-    "nohoist": [
-      "**/react-native",
-      "**/react-native/**"
     ]
   },
   "scripts": {
@@ -45,5 +41,6 @@
   },
   "lint-staged": {
     "*.{js,css,json,md}": "prettier --write"
-  }
+  },
+  "packageManager": "yarn@3.0.0"
 }
