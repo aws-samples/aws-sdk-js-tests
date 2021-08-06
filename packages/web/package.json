@@ -8,8 +8,7 @@
     "start:web": "esbuild src/index.js --servedir=public --outdir=public --bundle --define:global=window"
   },
   "dependencies": {
-    "@aws-sdk/test-utils": "workspace:*",
-    "util": "0.12.3"
+    "@aws-sdk/test-utils": "workspace:*"
   },
   "author": {
     "name": "AWS SDK for JavaScript Team",
