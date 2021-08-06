@@ -11,11 +11,6 @@
     "@aws-sdk/test-utils": "workspace:*",
     "util": "0.12.3"
   },
-  "devDependencies": {
-    "webpack": "5.10.3",
-    "webpack-cli": "4.2.0",
-    "webpack-dev-server": "3.11.0"
-  },
   "author": {
     "name": "AWS SDK for JavaScript Team",
     "url": "https://aws.amazon.com/javascript/"
