@@ -650,6 +650,7 @@ __metadata:
   resolution: "@aws-sdk/test-web@workspace:packages/web"
   dependencies:
     "@aws-sdk/test-utils": "workspace:*"
+    esbuild: 0.12.18
     util: 0.12.3
   languageName: unknown
   linkType: soft
@@ -3840,6 +3841,15 @@ __metadata:
     is-date-object: ^1.0.1
     is-symbol: ^1.0.2
   checksum: 4ead6671a2c1402619bdd77f3503991232ca15e17e46222b0a41a5d81aebc8740a77822f5b3c965008e631153e9ef0580540007744521e72de8e33599fca2eed
+  languageName: node
+  linkType: hard
+
+"esbuild@npm:0.12.18":
+  version: 0.12.18
+  resolution: "esbuild@npm:0.12.18"
+  bin:
+    esbuild: bin/esbuild
+  checksum: 956fefaf685c953dd49b5e271c21d76c158ff7f745a2a3a90fff145464285bcaeab72ad4f23c8938e7e730f5fad8fcab00fb81e6b1ef63ee89a5d06ed38ae894
   languageName: node
   linkType: hard
 
