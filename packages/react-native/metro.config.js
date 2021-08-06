@@ -7,6 +7,15 @@
 const path = require('path');
 
 module.exports = {
+  projectRoot: __dirname,
+  resolver: {
+    extraNodeModules: new Proxy(
+      {},
+      {
+        get: (target, name) => path.join(__dirname, `node_modules/${name}`),
+      },
+    ),
+  },
   transformer: {
     getTransformOptions: async () => ({
       transform: {
@@ -15,15 +24,5 @@ module.exports = {
       },
     }),
   },
-  resolver: {
-    extraNodeModules: new Proxy(
-      {},
-      {
-        get: (target, name) => {
-          return path.dirname(require.resolve(`${name}/package.json`));
-        },
-      },
-    ),
-  },
-  watchFolders: [path.resolve(__dirname, '../../')],
+  watchFolders: [path.resolve(__dirname, '../')],
 };
