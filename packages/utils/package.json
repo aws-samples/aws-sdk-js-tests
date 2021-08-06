@@ -5,10 +5,10 @@
   "private": true,
   "main": "src/index.js",
   "dependencies": {
-    "@aws-sdk/client-cognito-identity": "3.3.0",
-    "@aws-sdk/client-dynamodb": "3.3.0",
-    "@aws-sdk/credential-provider-cognito-identity": "3.3.0",
-    "aws-sdk": "2.828.0"
+    "@aws-sdk/client-cognito-identity": "3.25.0",
+    "@aws-sdk/client-dynamodb": "3.25.0",
+    "@aws-sdk/credential-provider-cognito-identity": "3.25.0",
+    "aws-sdk": "2.962.0"
   },
   "author": {
     "name": "AWS SDK for JavaScript Team",
