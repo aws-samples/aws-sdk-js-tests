@@ -1,9 +1,4 @@
-const {
-  config: { REGION },
-} = require("@aws-sdk/test-utils");
-const {
-  utils: { getV2Response, getV3Response },
-} = require("@aws-sdk/test-utils");
+import { REGION, getV2Response, getV3Response } from "@aws-sdk/test-utils";
 
 (async () => {
   let response;

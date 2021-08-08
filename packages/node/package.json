@@ -23,5 +23,6 @@
     "type": "git",
     "url": "https://github.com/aws-samples/aws-sdk-js-tests.git",
     "directory": "packages/node"
-  }
+  },
+  "type": "module"
 }

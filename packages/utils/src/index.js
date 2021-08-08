@@ -1,2 +1,2 @@
-export * from "./config";
-export * from "./utils";
+export * from "./config.js";
+export * from "./utils.js";
