@@ -1,12 +1,10 @@
-const AWS = require("aws-sdk");
+import AWS from "aws-sdk";
 
-const {
-  fromCognitoIdentityPool,
-} = require("@aws-sdk/credential-provider-cognito-identity");
-const { CognitoIdentityClient } = require("@aws-sdk/client-cognito-identity");
-const { DynamoDB } = require("@aws-sdk/client-dynamodb");
+import { fromCognitoIdentityPool } from "@aws-sdk/credential-provider-cognito-identity";
+import { CognitoIdentityClient } from "@aws-sdk/client-cognito-identity";
+import { DynamoDB } from "@aws-sdk/client-dynamodb";
 
-const { REGION, IDENTITY_POOL_ID } = require("./config");
+import { REGION, IDENTITY_POOL_ID } from "./config";
 
 const getV2Response = async (clientParams) => {
   const client = new AWS.DynamoDB(clientParams);
@@ -39,7 +37,7 @@ const getV3BrowserResponse = async () =>
     }),
   });
 
-module.exports = {
+export default {
   getV2Response,
   getV3Response,
   getV2BrowserResponse,
