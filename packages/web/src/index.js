@@ -3,6 +3,11 @@ import {
   getV3BrowserResponse,
 } from "@aws-sdk/test-utils";
 
+// Polyfill required for aws-sdk to work with vite.
+if (typeof window.global === "undefined") {
+  window.global = window;
+}
+
 const getHTMLElement = (title, content) => {
   const element = document.createElement("div");
   element.style.margin = "30px";
