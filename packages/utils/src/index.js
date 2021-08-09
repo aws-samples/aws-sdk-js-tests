@@ -1,4 +1,2 @@
-module.exports = {
-  config: require("./config"),
-  utils: require("./utils"),
-};
+export * from "./config.js";
+export * from "./utils.js";

@@ -1,6 +1,7 @@
-const {
-  utils: { getV2BrowserResponse, getV3BrowserResponse },
-} = require("@aws-sdk/test-utils");
+import {
+  getV2BrowserResponse,
+  getV3BrowserResponse,
+} from "@aws-sdk/test-utils";
 
 const getHTMLElement = (title, content) => {
   const element = document.createElement("div");
