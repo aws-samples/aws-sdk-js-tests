@@ -24,8 +24,7 @@ import {Header, Colors} from 'react-native/Libraries/NewAppScreen';
 import 'react-native-get-random-values';
 import 'react-native-url-polyfill/auto';
 
-import {utils} from '@aws-sdk/test-utils';
-const {getV2BrowserResponse, getV3BrowserResponse} = utils;
+import {getV2BrowserResponse, getV3BrowserResponse} from '@aws-sdk/test-utils';
 
 // Refs: https://github.com/facebook/metro/issues/287#issuecomment-738622439
 LogBox.ignoreLogs(['Require cycle: node_modules']);
