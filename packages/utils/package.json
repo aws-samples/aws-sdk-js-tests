@@ -8,7 +8,7 @@
     "@aws-sdk/client-cognito-identity": "3.27.0",
     "@aws-sdk/client-dynamodb": "3.27.0",
     "@aws-sdk/credential-provider-cognito-identity": "3.27.0",
-    "aws-sdk": "2.974.0"
+    "aws-sdk": "2.990.0"
   },
   "author": {
     "name": "AWS SDK for JavaScript Team",

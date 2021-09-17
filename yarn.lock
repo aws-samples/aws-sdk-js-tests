@@ -643,7 +643,7 @@ __metadata:
     "@aws-sdk/client-cognito-identity": 3.27.0
     "@aws-sdk/client-dynamodb": 3.27.0
     "@aws-sdk/credential-provider-cognito-identity": 3.27.0
-    aws-sdk: 2.974.0
+    aws-sdk: 2.990.0
   languageName: unknown
   linkType: soft
 
@@ -2726,9 +2726,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"aws-sdk@npm:2.974.0":
-  version: 2.974.0
-  resolution: "aws-sdk@npm:2.974.0"
+"aws-sdk@npm:2.990.0":
+  version: 2.990.0
+  resolution: "aws-sdk@npm:2.990.0"
   dependencies:
     buffer: 4.9.2
     events: 1.1.1
@@ -2739,7 +2739,7 @@ __metadata:
     url: 0.10.3
     uuid: 3.3.2
     xml2js: 0.4.19
-  checksum: 8abafd55fb7eb2b1cc5d81072c3873405568dcef5e611495b28ba714be7767747bf79e3d99eb45c50a30694f6b4460059af4c311a9e7fc85f008be9882d8e009
+  checksum: ff6288645141ed0917c032ef383d0b6c8d239ca98b7b90050d7b2b65af34888978c8960620fe616d616792a1e1672357298c8b2244fd2784078aa417104b5042
   languageName: node
   linkType: hard
 
