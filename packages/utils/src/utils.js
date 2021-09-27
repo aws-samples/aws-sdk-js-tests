@@ -2,7 +2,7 @@ import AWS from "aws-sdk";
 
 import { fromCognitoIdentityPool } from "@aws-sdk/credential-provider-cognito-identity";
 import { CognitoIdentityClient } from "@aws-sdk/client-cognito-identity";
-import { S3 } from "@aws-sdk/client-s3";
+import { S3 } from "@trivikr-test/client-s3";
 
 import { REGION, IDENTITY_POOL_ID } from "./config.js";
 
