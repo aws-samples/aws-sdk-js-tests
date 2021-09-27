@@ -788,7 +788,7 @@ __metadata:
   dependencies:
     "@aws-sdk/client-cognito-identity": 3.28.0
     "@aws-sdk/credential-provider-cognito-identity": 3.28.0
-    "@trivikr-test/client-s3": 0.2.4
+    "@trivikr-test/client-s3": 0.2.5
     aws-sdk: 2.990.0
   languageName: unknown
   linkType: soft
@@ -2482,9 +2482,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@trivikr-test/client-s3@npm:0.2.4":
-  version: 0.2.4
-  resolution: "@trivikr-test/client-s3@npm:0.2.4"
+"@trivikr-test/client-s3@npm:0.2.5":
+  version: 0.2.5
+  resolution: "@trivikr-test/client-s3@npm:0.2.5"
   dependencies:
     "@aws-crypto/sha256-browser": ^1.0.0
     "@aws-crypto/sha256-js": ^1.0.0
@@ -2533,7 +2533,7 @@ __metadata:
     entities: 2.2.0
     fast-xml-parser: 3.19.0
     tslib: ^2.3.0
-  checksum: dd933530c453d385bf607f98e0ccab3542ddc7c8b28eeb52a548b913d57937726284254f7dd8bb290702ba832073f967f540e09f9922740b63dab07503327a7a
+  checksum: 4a6d4220d9dd896172dbc299c8a645a5728af68eb979eb14305282647f07c08415f7b3bb9866a0deb93d06872a4f84536a34c9410215190c0f62fcf687edcd25
   languageName: node
   linkType: hard
 

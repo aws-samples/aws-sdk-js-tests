@@ -7,7 +7,7 @@
   "dependencies": {
     "@aws-sdk/client-cognito-identity": "3.28.0",
     "@aws-sdk/credential-provider-cognito-identity": "3.28.0",
-    "@trivikr-test/client-s3": "0.2.4",
+    "@trivikr-test/client-s3": "0.2.5",
     "aws-sdk": "2.990.0"
   },
   "author": {
