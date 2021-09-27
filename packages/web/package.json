@@ -23,6 +23,6 @@
     "directory": "packages/web"
   },
   "devDependencies": {
-    "vite": "2.4.4"
+    "vite": "2.5.10"
   }
 }
