@@ -8,12 +8,12 @@ import { REGION, IDENTITY_POOL_ID } from "./config.js";
 
 export const getV2Response = async (clientParams) => {
   const client = new AWS.S3(clientParams);
-  return client.listBuckets().promise();
+  return client.getBucketCors({ Bucket: "temp-client-s3-test-e2e" }).promise();
 };
 
 export const getV3Response = async (clientParams) => {
   const client = new S3(clientParams);
-  return client.listBuckets({});
+  return client.getBucketCors({ Bucket: "temp-client-s3-test-e2e" });
 };
 
 export const getV2BrowserResponse = async () => {
