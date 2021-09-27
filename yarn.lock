@@ -61,13 +61,13 @@ __metadata:
   linkType: hard
 
 "@aws-crypto/util@npm:^1.2.0":
-  version: 1.2.0
-  resolution: "@aws-crypto/util@npm:1.2.0"
+  version: 1.2.1
+  resolution: "@aws-crypto/util@npm:1.2.1"
   dependencies:
     "@aws-sdk/types": ^3.1.0
     "@aws-sdk/util-utf8-browser": ^3.0.0
     tslib: ^1.11.1
-  checksum: 888cfa61fb5a15fcc6ba86a6ab2b71201f9cd54c6553012ba0734eca05260dd0ca9b304dfa85c32943bc7a3d25ed17ade10805160ec47c835dcdf704c9b295b7
+  checksum: 1b14ca51bfe533532829fe63832b34b4da8ee2ad22bcf388e914c78f77b08e61b9bffce4e2ed05635467f95bdb6a5a64152d26cc17261241d750f955dea63bea
   languageName: node
   linkType: hard
 
