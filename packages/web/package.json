@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@aws-sdk/test-utils": "workspace:*",
-    "util": "0.12.3"
+    "util": "0.12.4"
   },
   "author": {
     "name": "AWS SDK for JavaScript Team",

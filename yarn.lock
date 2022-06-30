@@ -687,7 +687,7 @@ __metadata:
   resolution: "@aws-sdk/test-web@workspace:packages/web"
   dependencies:
     "@aws-sdk/test-utils": "workspace:*"
-    util: 0.12.3
+    util: 0.12.4
     vite: 2.5.10
   languageName: unknown
   linkType: soft
@@ -8579,9 +8579,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"util@npm:0.12.3":
-  version: 0.12.3
-  resolution: "util@npm:0.12.3"
+"util@npm:0.12.4":
+  version: 0.12.4
+  resolution: "util@npm:0.12.4"
   dependencies:
     inherits: ^2.0.3
     is-arguments: ^1.0.4
@@ -8589,7 +8589,7 @@ __metadata:
     is-typed-array: ^1.1.3
     safe-buffer: ^5.1.2
     which-typed-array: ^1.1.2
-  checksum: e64d4a901999017d3125ba20d66f3f97429240ed1f7cf60a705abba8a4901277b909250677f616e043cd49f7ce5e4f2f4df5aa3960e8fdf83941f828f3643e9a
+  checksum: 8eac7a6e6b341c0f1b3eb73bbe5dfcae31a7e9699c8fc3266789f3e95f7637946a7700dcf1904dbd3749a58a36760ebf7acf4bb5b717f7468532a8a79f44eff0
   languageName: node
   linkType: hard
 
