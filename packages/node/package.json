@@ -11,7 +11,7 @@
     "@aws-sdk/test-utils": "workspace:*"
   },
   "devDependencies": {
-    "nodemon": "2.0.4"
+    "nodemon": "2.0.18"
   },
   "author": {
     "name": "AWS SDK for JavaScript Team",
