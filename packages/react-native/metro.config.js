@@ -29,6 +29,6 @@ module.exports = {
     }),
   },
   watchFolders: workspaces
-    .filter((f) => f !== currentWorkspace)
-    .map((f) => path.join(__dirname, '../', f)),
+    .filter(f => f !== currentWorkspace)
+    .map(f => path.join(__dirname, '../', f)),
 };
