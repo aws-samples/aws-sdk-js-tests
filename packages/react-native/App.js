@@ -6,95 +6,102 @@
  * @flow strict-local
  */
 
-import React from 'react';
-import type {Node} from 'react';
+import React, {useState} from 'react';
 import {
+  Button,
+  LogBox,
   SafeAreaView,
-  ScrollView,
   StatusBar,
   StyleSheet,
-  Text,
-  useColorScheme,
+  ScrollView,
   View,
+  Text,
 } from 'react-native';
 
-import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
+import {Header, Colors} from 'react-native/Libraries/NewAppScreen';
 
-const Section = ({children, title}): Node => {
-  const isDarkMode = useColorScheme() === 'dark';
-  return (
-    <View style={styles.sectionContainer}>
-      <Text
-        style={[
-          styles.sectionTitle,
-          {
-            color: isDarkMode ? Colors.white : Colors.black,
-          },
-        ]}
-      >
-        {title}
-      </Text>
-      <Text
-        style={[
-          styles.sectionDescription,
-          {
-            color: isDarkMode ? Colors.light : Colors.dark,
-          },
-        ]}
-      >
-        {children}
-      </Text>
-    </View>
-  );
-};
+// React Native polyfills required for AWS SDK for JavaScript.
+import 'react-native-get-random-values';
+import 'react-native-url-polyfill/auto';
 
-const App: () => Node = () => {
-  const isDarkMode = useColorScheme() === 'dark';
+import {getV2BrowserResponse, getV3BrowserResponse} from '@aws-sdk/test-utils';
 
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
+// Refs: https://github.com/facebook/metro/issues/287#issuecomment-738622439
+LogBox.ignoreLogs(['Require cycle: node_modules']);
+
+const App: () => React$Node = () => {
+  const [v2Response, setV2Response] = useState('');
+  const [v3Response, setV3Response] = useState('');
+
+  const fetchV2Response = async () => {
+    try {
+      const v2Response = await getV2BrowserResponse();
+      setV2Response(JSON.stringify(v2Response, null, 2));
+    } catch (err) {
+      setV2Response(`Error: ${err}`);
+    }
+  };
+
+  const fetchV3Response = async () => {
+    try {
+      const v3Response = await getV3BrowserResponse();
+      setV3Response(JSON.stringify(v3Response, null, 2));
+    } catch (err) {
+      setV3Response(`Error: ${err}`);
+    }
   };
 
   return (
-    <SafeAreaView style={backgroundStyle}>
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        style={backgroundStyle}
-      >
-        <Header />
-        <View
-          style={{
-            backgroundColor: isDarkMode ? Colors.black : Colors.white,
-          }}
+    <>
+      <StatusBar barStyle="dark-content" />
+      <SafeAreaView>
+        <ScrollView
+          contentInsetAdjustmentBehavior="automatic"
+          style={styles.scrollView}
         >
-          <Section title="Step One">
-            Edit <Text style={styles.highlight}>App.js</Text> to change this
-            screen and then come back to see your edits.
-          </Section>
-          <Section title="See Your Changes">
-            <ReloadInstructions />
-          </Section>
-          <Section title="Debug">
-            <DebugInstructions />
-          </Section>
-          <Section title="Learn More">
-            Read the docs to discover what to do next:
-          </Section>
-          <LearnMoreLinks />
-        </View>
-      </ScrollView>
-    </SafeAreaView>
+          <Header />
+          {global.HermesInternal == null ? null : (
+            <View style={styles.engine}>
+              <Text style={styles.footer}>Engine: Hermes</Text>
+            </View>
+          )}
+          <View style={styles.body}>
+            <View style={styles.sectionContainer}>
+              <Text style={styles.sectionTitle}>
+                AWS SDK for JavaScript (v2):
+              </Text>
+              <Button title="Call with v2" onPress={fetchV2Response} />
+              <ScrollView style={styles.scrollView}>
+                <Text style={styles.sectionDescription}>{v2Response}</Text>
+              </ScrollView>
+            </View>
+            <View style={styles.sectionContainer}>
+              <Text style={styles.sectionTitle}>
+                AWS SDK for JavaScript (v3):
+              </Text>
+              <Button title="Call with v3" onPress={fetchV3Response} />
+              <ScrollView style={styles.scrollView}>
+                <Text style={styles.sectionDescription}>{v3Response}</Text>
+              </ScrollView>
+            </View>
+          </View>
+        </ScrollView>
+      </SafeAreaView>
+    </>
   );
 };
 
 const styles = StyleSheet.create({
+  scrollView: {
+    backgroundColor: Colors.lighter,
+  },
+  engine: {
+    position: 'absolute',
+    right: 0,
+  },
+  body: {
+    backgroundColor: Colors.white,
+  },
   sectionContainer: {
     marginTop: 32,
     paddingHorizontal: 24,
@@ -102,14 +109,24 @@ const styles = StyleSheet.create({
   sectionTitle: {
     fontSize: 24,
     fontWeight: '600',
+    color: Colors.black,
   },
   sectionDescription: {
     marginTop: 8,
     fontSize: 18,
     fontWeight: '400',
+    color: Colors.dark,
   },
   highlight: {
     fontWeight: '700',
+  },
+  footer: {
+    color: Colors.dark,
+    fontSize: 12,
+    fontWeight: '600',
+    padding: 4,
+    paddingRight: 12,
+    textAlign: 'right',
   },
 });
 
