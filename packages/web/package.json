@@ -5,7 +5,7 @@
   "private": true,
   "main": "src/index.js",
   "scripts": {
-    "start:web": "vite"
+    "start:web": "vite --open"
   },
   "dependencies": {
     "@aws-sdk/test-utils": "workspace:*"
@@ -22,6 +22,6 @@
     "directory": "packages/web"
   },
   "devDependencies": {
-    "vite": "2.9.13"
+    "vite": "3.0.0"
   }
 }

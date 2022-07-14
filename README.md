@@ -33,7 +33,7 @@ Code Samples for testing AWS SDK for JavaScript.
 
 ### Browser:
 
-- Run `yarn start:web` to start webpack-dev-server with HMR.
+- Run `yarn start:web` to start vite server with HMR.
 - The bundle will be opened in default browser, and get refreshed when code is updated.
 - The file being run is at [`packages/web/src/index.js`](./packages/web/src/index.js).
 
