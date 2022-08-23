@@ -1,0 +1,15 @@
+{
+  "extends": ["config:base"],
+  "packageRules": [
+    {
+      "enabled": false,
+      "groupName": "everything",
+      "matchManagers": ["yarn"],
+      "matchPackagePatterns": ["*"],
+      "separateMajorMinor": false
+    }
+  ],
+  "vulnerabilityAlerts": {
+    "enabled": true
+  }
+}
