@@ -4,11 +4,7 @@
  *
  * @format
  */
-const fs = require('fs');
 const path = require('path');
-
-const workspaces = fs.readdirSync(path.resolve(__dirname, '../'));
-const currentWorkspace = path.basename(__dirname);
 
 module.exports = {
   projectRoot: __dirname,
@@ -28,7 +24,5 @@ module.exports = {
       },
     }),
   },
-  watchFolders: workspaces
-    .filter(f => f !== currentWorkspace)
-    .map(f => path.join(__dirname, '../', f)),
+  watchFolders: [path.resolve(__dirname, '..', '..')],
 };
