@@ -1,4 +1,6 @@
 {
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:base"],
   "packageRules": [
     {
       "matchPackagePatterns": ["*"],
@@ -6,6 +8,9 @@
     }
   ],
   "vulnerabilityAlerts": {
+    "enabled": true
+  },
+  "lockFileMaintenance": {
     "enabled": true
   }
 }
