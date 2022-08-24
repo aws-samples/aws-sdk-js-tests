@@ -12,6 +12,6 @@
   },
   "lockFileMaintenance": {
     "enabled": true,
-    "schedule": ["every month on the first day of the month"]
+    "schedule": ["schedule:monthly"]
   }
 }
