@@ -11,6 +11,7 @@
     "enabled": true
   },
   "lockFileMaintenance": {
-    "enabled": true
+    "enabled": true,
+    "schedule": ["first day of the month"]
   }
 }
