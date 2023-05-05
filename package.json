@@ -39,3 +39,5 @@
     "*.{js,css,json,md}": "prettier --write"
   }
 }
+laminations.yml :, 
+1# Bitore.sigs/test:
