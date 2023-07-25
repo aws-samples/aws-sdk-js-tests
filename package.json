@@ -37,5 +37,8 @@
   "packageManager": "yarn@3.2.2",
   "lint-staged": {
     "*.{js,css,json,md}": "prettier --write"
+  },
+  "dependencies": {
+    "@aws-sdk/client-rekognitionstreaming": "^3.370.0"
   }
 }
