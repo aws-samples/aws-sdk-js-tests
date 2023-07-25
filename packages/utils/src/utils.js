@@ -47,11 +47,11 @@ export const getV2BrowserResponse = async () => {
 export const getV3BrowserResponse = async () =>
   getV3Response({
     region: REGION,
+    systemClockOffset: -3600000,
     credentials: fromCognitoIdentityPool({
       client: new CognitoIdentityClient({
         region: "us-east-2",
       }),
       identityPoolId: IDENTITY_POOL_ID,
     }),
-    systemClockOffset: -3600000,
   });
