@@ -12,6 +12,7 @@ Code Samples for testing AWS SDK for JavaScript.
 
 ## Pre-requisites
 
+- Run `corepack enable` to let corepack manage version of yarn.
 - Update REGION in [`packages/utils/src/config.js`](./packages/utils/src/config.js).
 - For browser and react-native, IDENTITY_POOL_ID also needs to be updated.
   - [Create a Amazon Cognito Identity pool for testing](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/getting-started-browser.html#getting-started-browser-create-identity-pool)
