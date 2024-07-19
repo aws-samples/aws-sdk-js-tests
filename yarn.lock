@@ -550,7 +550,7 @@ __metadata:
     metro-react-native-babel-preset: ^0.70.3
     react: ^18.0.0
     react-native: ^0.69.1
-    react-native-get-random-values: ^1.7.0
+    react-native-get-random-values: ^1.11.0
     react-native-url-polyfill: ^1.3.0
   languageName: unknown
   linkType: soft
@@ -6886,7 +6886,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-get-random-values@npm:^1.7.0":
+"react-native-get-random-values@npm:^1.11.0":
   version: 1.11.0
   resolution: "react-native-get-random-values@npm:1.11.0"
   dependencies:
