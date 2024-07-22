@@ -40,6 +40,8 @@ Code Samples for testing AWS SDK for JavaScript.
 
 ### React Native:
 
+- Install [dependencies](https://reactnative.dev/docs/set-up-your-environment#installing-dependencies) for the Development OS and Target OS.
+
 #### iOS
 
 - Run `yarn start:ios` to start local development server with iOS using React Native CLI.
