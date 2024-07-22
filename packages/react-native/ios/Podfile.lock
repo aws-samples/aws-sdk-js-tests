@@ -457,6 +457,7 @@ DEPENDENCIES:
   - React-callinvoker (from `../node_modules/react-native/ReactCommon/callinvoker`)
   - React-Codegen (from `build/generated/ios`)
   - React-Core (from `../node_modules/react-native/`)
+  - React-Core/DevSupport (from `../node_modules/react-native/`)
   - React-Core/RCTWebSocket (from `../node_modules/react-native/`)
   - React-CoreModules (from `../node_modules/react-native/React/CoreModules`)
   - React-cxxreact (from `../node_modules/react-native/ReactCommon/cxxreact`)
@@ -623,6 +624,6 @@ SPEC CHECKSUMS:
   Yoga: d4f5b037672e6b68ba484c7cf7fe6790122df792
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: 983250a4189ca0ca42ae5295cef926831349ff1f
+PODFILE CHECKSUM: 806287ccc419a573c4f3f2e026854122b234206c
 
 COCOAPODS: 1.15.2
