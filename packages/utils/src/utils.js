@@ -8,12 +8,12 @@ import { REGION, IDENTITY_POOL_ID } from "./config.js";
 
 export const getV2Response = async (clientParams) => {
   const client = new AWS.DynamoDB(clientParams);
-  return client.listTables().promise();
+  return client.listTables({ Limit: 1 }).promise();
 };
 
 export const getV3Response = async (clientParams) => {
   const client = new DynamoDB(clientParams);
-  return client.listTables({});
+  return client.listTables({ Limit: 1 });
 };
 
 export const getV2BrowserResponse = async () => {
