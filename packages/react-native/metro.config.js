@@ -1,3 +1,11 @@
+const {getDefaultConfig, mergeConfig} = require('@react-native/metro-config');
+
+const defaultConfig = getDefaultConfig(__dirname);
+
+const {
+  resolver: {sourceExts, assetExts},
+} = getDefaultConfig(__dirname);
+
 /**
  * Metro configuration for React Native
  * https://github.com/facebook/react-native
@@ -6,8 +14,7 @@
  */
 const path = require('path');
 
-module.exports = {
-  projectRoot: __dirname,
+const config = {
   resolver: {
     extraNodeModules: new Proxy(
       {},
@@ -15,6 +22,8 @@ module.exports = {
         get: (target, name) => path.join(__dirname, `node_modules/${name}`),
       },
     ),
+    assetExts: assetExts.filter(ext => ext !== 'svg'),
+    sourceExts: [...sourceExts, 'svg'],
   },
   transformer: {
     getTransformOptions: async () => ({
@@ -26,3 +35,5 @@ module.exports = {
   },
   watchFolders: [path.resolve(__dirname, '..', '..')],
 };
+
+module.exports = mergeConfig(defaultConfig, config);
