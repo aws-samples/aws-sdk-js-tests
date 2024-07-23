@@ -547,7 +547,6 @@ __metadata:
     "@aws-sdk/test-utils": "workspace:*"
     "@babel/core": ^7.12.9
     "@babel/runtime": ^7.12.5
-    "@react-native/metro-config": ^0.72.12
     metro-react-native-babel-preset: ^0.76.9
     react: ^18.3.1
     react-native: ^0.72.15
@@ -2375,18 +2374,6 @@ __metadata:
   version: 0.72.1
   resolution: "@react-native/js-polyfills@npm:0.72.1"
   checksum: c81b0217cefdfda5cda34acf260a862711e0c9262c2503eb155d6e16050438b387242f7232b986890cb461d01ca61a8b6dab9a9bcc75e00f5509315006028286
-  languageName: node
-  linkType: hard
-
-"@react-native/metro-config@npm:^0.72.12":
-  version: 0.72.12
-  resolution: "@react-native/metro-config@npm:0.72.12"
-  dependencies:
-    "@react-native/js-polyfills": ^0.72.1
-    metro-config: ^0.76.9
-    metro-react-native-babel-transformer: ^0.76.9
-    metro-runtime: ^0.76.9
-  checksum: cbce117512d06b91cca6ebc8448ae788371c0863aa25c47bfc7dcd2982cba2e83b770553632aeccd51d504e5fcfeaf4c1e4cde9eb0d3ed307a472776ca876763
   languageName: node
   linkType: hard
 
