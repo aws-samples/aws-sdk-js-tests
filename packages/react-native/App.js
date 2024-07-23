@@ -7,7 +7,7 @@
  */
 
 import React, {useState} from 'react';
-import {Button, StyleSheet, ScrollView, View, Text} from 'react-native';
+import {Button, StyleSheet, View, Text, TextInput} from 'react-native';
 
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 
@@ -44,16 +44,22 @@ const App: () => Node = () => {
       <View style={styles.sectionContainer}>
         <Text style={styles.sectionTitle}>AWS SDK for JavaScript (v2):</Text>
         <Button title="Call with v2" onPress={fetchV2Response} />
-        <ScrollView style={styles.resultWindow}>
-          <Text style={styles.sectionDescription}>{v2Response}</Text>
-        </ScrollView>
+        <TextInput
+          style={styles.sectionDescription}
+          multiline={true}
+          placeholder="v2 response will be populated here"
+          value={v2Response}
+        />
       </View>
       <View style={styles.sectionContainer}>
         <Text style={styles.sectionTitle}>AWS SDK for JavaScript (v3):</Text>
         <Button title="Call with v3" onPress={fetchV3Response} />
-        <ScrollView style={styles.resultWindow}>
-          <Text style={styles.sectionDescription}>{v3Response}</Text>
-        </ScrollView>
+        <TextInput
+          style={styles.sectionDescription}
+          multiline={true}
+          placeholder="v3 response will be populated here"
+          value={v3Response}
+        />
       </View>
     </View>
   );
@@ -64,8 +70,8 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   sectionContainer: {
+    flex: 1,
     borderWidth: 1,
-    flex: 2,
     padding: 16,
   },
   sectionTitle: {
@@ -74,13 +80,12 @@ const styles = StyleSheet.create({
     fontWeight: '600',
     color: Colors.black,
   },
-  resultWindow: {
-    backgroundColor: Colors.lighter,
-  },
   sectionDescription: {
+    flex: 1,
     fontSize: 14,
     fontWeight: '400',
     color: Colors.dark,
+    backgroundColor: Colors.lighter,
   },
 });
 
