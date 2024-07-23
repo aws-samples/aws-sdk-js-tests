@@ -548,6 +548,7 @@ __metadata:
     "@babel/core": ^7.12.9
     "@babel/runtime": ^7.12.5
     "@react-native/babel-preset": ^0.73.21
+    "@react-native/metro-config": ^0.73.5
     react: ^18.3.1
     react-native: ^0.73.9
     react-native-get-random-values: ^1.11.0
@@ -2424,6 +2425,18 @@ __metadata:
   peerDependencies:
     "@babel/core": "*"
   checksum: 49d2a5c19186dd8eab78d334e3499af8084b9a083a7c5dab11cd668a79324d5942acdb3c3c32ce0e63bace8b0140c72029efdabf99297e93107e90c7b79bf880
+  languageName: node
+  linkType: hard
+
+"@react-native/metro-config@npm:^0.73.5":
+  version: 0.73.5
+  resolution: "@react-native/metro-config@npm:0.73.5"
+  dependencies:
+    "@react-native/js-polyfills": 0.73.1
+    "@react-native/metro-babel-transformer": 0.73.15
+    metro-config: ^0.80.3
+    metro-runtime: ^0.80.3
+  checksum: ddf5793664a47bbf16d79d2a4ea7f90cecb01206fbe5fc91aadb5e4169159cf24282ab0116799b9271332b7cb6ce9bc1420a57ad65d9cdfe98ac1e3b9a1f75ae
   languageName: node
   linkType: hard
 
