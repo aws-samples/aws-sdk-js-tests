@@ -7,7 +7,7 @@
  */
 
 import React, {useState} from 'react';
-import {Button, StyleSheet, ScrollView, View, Text} from 'react-native';
+import {Button, StyleSheet, View, Text, TextInput} from 'react-native';
 
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 
@@ -44,16 +44,20 @@ const App: () => Node = () => {
       <View style={styles.sectionContainer}>
         <Text style={styles.sectionTitle}>AWS SDK for JavaScript (v2):</Text>
         <Button title="Call with v2" onPress={fetchV2Response} />
-        <ScrollView style={styles.resultWindow}>
-          <Text style={styles.sectionDescription}>{v2Response}</Text>
-        </ScrollView>
+        <TextInput
+          style={styles.sectionDescription}
+          placeholder="v2 response will be populated here"
+          value={v2Response}
+        />
       </View>
       <View style={styles.sectionContainer}>
         <Text style={styles.sectionTitle}>AWS SDK for JavaScript (v3):</Text>
         <Button title="Call with v3" onPress={fetchV3Response} />
-        <ScrollView style={styles.resultWindow}>
-          <Text style={styles.sectionDescription}>{v3Response}</Text>
-        </ScrollView>
+        <TextInput
+          style={styles.sectionDescription}
+          placeholder="v3 response will be populated here"
+          value={v3Response}
+        />
       </View>
     </View>
   );
