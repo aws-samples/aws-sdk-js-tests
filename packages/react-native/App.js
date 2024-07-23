@@ -70,8 +70,8 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   sectionContainer: {
+    flex: 1,
     borderWidth: 1,
-    flex: 2,
     padding: 16,
   },
   sectionTitle: {
@@ -81,6 +81,7 @@ const styles = StyleSheet.create({
     color: Colors.black,
   },
   sectionDescription: {
+    flex: 1,
     fontSize: 14,
     fontWeight: '400',
     color: Colors.dark,
