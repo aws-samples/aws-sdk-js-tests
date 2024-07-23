@@ -80,13 +80,11 @@ const styles = StyleSheet.create({
     fontWeight: '600',
     color: Colors.black,
   },
-  resultWindow: {
-    backgroundColor: Colors.lighter,
-  },
   sectionDescription: {
     fontSize: 14,
     fontWeight: '400',
     color: Colors.dark,
+    backgroundColor: Colors.lighter,
   },
 });
 
