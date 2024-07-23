@@ -46,6 +46,7 @@ const App: () => Node = () => {
         <Button title="Call with v2" onPress={fetchV2Response} />
         <TextInput
           style={styles.sectionDescription}
+          multiline={true}
           placeholder="v2 response will be populated here"
           value={v2Response}
         />
@@ -55,6 +56,7 @@ const App: () => Node = () => {
         <Button title="Call with v3" onPress={fetchV3Response} />
         <TextInput
           style={styles.sectionDescription}
+          multiline={true}
           placeholder="v3 response will be populated here"
           value={v3Response}
         />
