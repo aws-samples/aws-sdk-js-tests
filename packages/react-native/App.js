@@ -8,6 +8,7 @@
 
 import React, {useState} from 'react';
 import {Button, StyleSheet, View, Text, TextInput} from 'react-native';
+import {serializeError} from 'serialize-error';
 
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 
@@ -22,27 +23,12 @@ const App: () => Node = () => {
   const [v2Response, setV2Response] = useState('');
   const [v3Response, setV3Response] = useState('');
 
-  const logError = err => {
-    console.error(
-      JSON.stringify(
-        {
-          ...err,
-          name: err.name,
-          message: err.message,
-          stack: err.stack,
-        },
-        null,
-        2,
-      ),
-    );
-  };
-
   const fetchV2Response = async () => {
     try {
       const v2Response = await getV2BrowserResponse();
       setV2Response(JSON.stringify(v2Response, null, 2));
     } catch (err) {
-      logError(err);
+      console.error(serializeError(err));
       setV2Response(`Error: ${err}. Check console for more details.`);
     }
   };
@@ -52,7 +38,7 @@ const App: () => Node = () => {
       const v3Response = await getV3BrowserResponse();
       setV3Response(JSON.stringify(v3Response, null, 2));
     } catch (err) {
-      logError(err);
+      console.error(serializeError(err));
       setV3Response(`Error: ${err}. Check console for more details.`);
     }
   };
