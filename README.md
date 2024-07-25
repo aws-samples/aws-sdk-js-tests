@@ -32,11 +32,27 @@ Code Samples for testing AWS SDK for JavaScript.
 - The responses returned by clients will be printed in console, and will re-run when code is updated.
 - The file being run is at [`packages/node/src/index.js`](./packages/node/src/index.js).
 
+  <details><summary>Click to view Node.js screenshot</summary>
+  <p>
+
+  ![screenshot-node](./img/screenshot-node.png)
+
+  </p>
+  </details>
+
 ### Browser:
 
 - Run `yarn start:web` to start vite server with HMR.
 - The bundle will be opened in default browser, and get refreshed when code is updated.
 - The file being run is at [`packages/web/src/index.js`](./packages/web/src/index.js).
+
+  <details><summary>Click to view Browser screenshot</summary>
+  <p>
+
+  ![screenshot-web](./img/screenshot-web.png)
+
+  </p>
+  </details>
 
 ### React Native:
 
@@ -46,9 +62,25 @@ Code Samples for testing AWS SDK for JavaScript.
 
 - Run `yarn start:ios` to start local development server with iOS using React Native CLI.
 
+  <details><summary>Click to view iOS screenshot</summary>
+  <p>
+
+  ![screenshot-ios](./img/screenshot-ios.png)
+
+  </p>
+  </details>
+
 #### Android
 
 - Run `yarn start:android` to start local development server with Android using React Native CLI.
+
+  <details><summary>Click to view Android screenshot</summary>
+  <p>
+
+  ![screenshot-android](./img/screenshot-android.png)
+
+  </p>
+  </details>
 
 The react-native app in simulator/emulator will refresh when code is updated.
 The file being run is at [`packages/react-native/App.js`](./packages/react-native/App.js).
