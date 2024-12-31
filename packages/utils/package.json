@@ -7,8 +7,7 @@
   "dependencies": {
     "@aws-sdk/client-cognito-identity": "^3.540.0",
     "@aws-sdk/client-dynamodb": "^3.540.0",
-    "@aws-sdk/credential-provider-cognito-identity": "^3.540.0",
-    "aws-sdk": "^2.1588.0"
+    "@aws-sdk/credential-provider-cognito-identity": "^3.540.0"
   },
   "author": {
     "name": "AWS SDK for JavaScript Team",

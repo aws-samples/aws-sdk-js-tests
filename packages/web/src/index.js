@@ -1,7 +1,4 @@
-import {
-  getV2BrowserResponse,
-  getV3BrowserResponse,
-} from "@aws-sdk/test-utils";
+import { getV3BrowserResponse } from "@aws-sdk/test-utils";
 
 const getHTMLElement = (title, content) => {
   const element = document.createElement("div");
@@ -20,14 +17,6 @@ const getHTMLElement = (title, content) => {
   return element;
 };
 
-const componentV2 = async () => {
-  const response = await getV2BrowserResponse();
-  return getHTMLElement(
-    "Data returned by v2:",
-    JSON.stringify(response, null, 2)
-  );
-};
-
 const componentV3 = async () => {
   const response = await getV3BrowserResponse();
 
@@ -38,6 +27,5 @@ const componentV3 = async () => {
 };
 
 (async () => {
-  document.body.appendChild(await componentV2());
   document.body.appendChild(await componentV3());
 })();
