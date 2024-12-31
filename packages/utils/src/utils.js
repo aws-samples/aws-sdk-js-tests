@@ -4,13 +4,13 @@ import { DynamoDB } from "@aws-sdk/client-dynamodb";
 
 import { REGION, IDENTITY_POOL_ID } from "./config.js";
 
-export const getV3Response = async (clientParams) => {
+export const getResponse = async (clientParams) => {
   const client = new DynamoDB(clientParams);
   return client.listTables({ Limit: 1 });
 };
 
-export const getV3BrowserResponse = async () =>
-  getV3Response({
+export const getBrowserResponse = async () =>
+  getResponse({
     region: REGION,
     credentials: fromCognitoIdentityPool({
       client: new CognitoIdentityClient({
