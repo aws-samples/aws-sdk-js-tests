@@ -15,9 +15,9 @@ Code Samples for testing AWS SDK for JavaScript.
 - Run `corepack enable` to let corepack manage version of yarn.
 - Update REGION in [`packages/utils/src/config.js`](./packages/utils/src/config.js).
 - For browser and react-native, IDENTITY_POOL_ID also needs to be updated.
-  - [Create a Amazon Cognito Identity pool for testing](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/getting-started-browser.html#getting-started-browser-create-identity-pool)
+  - [Create a Amazon Cognito Identity pool for testing](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/getting-started-browser.html#getting-started-browser-create-identity-pool)
     - Note down IDENTITY_POOL_ID
-  - [Add a Policy to the test Unauthenticated IAM Role](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/getting-started-browser.html#getting-started-browser-iam-role)
+  - [Add a Policy to the test Unauthenticated IAM Role](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/getting-started-browser.html#getting-started-browser-iam-role)
     - The policy should be specific to the operations you want to test
   - Update the IDENTITY_POOL_ID in [`packages/utils/src/config.js`](./packages/utils/src/config.js).
 
@@ -28,7 +28,7 @@ Code Samples for testing AWS SDK for JavaScript.
 
 ### Node.js:
 
-- Run `yarn start:node` to run both v2 and v3 clients in Node.js
+- Run `yarn start:node` to run SDK clients in Node.js
 - The responses returned by clients will be printed in console, and will re-run when code is updated.
 - The file being run is at [`packages/node/src/index.js`](./packages/node/src/index.js).
 

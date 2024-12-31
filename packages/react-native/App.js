@@ -17,52 +17,31 @@ import 'react-native-get-random-values';
 import 'react-native-url-polyfill/auto';
 import 'web-streams-polyfill/dist/polyfill';
 
-import {getV2BrowserResponse, getV3BrowserResponse} from '@aws-sdk/test-utils';
+import {getBrowserResponse} from '@aws-sdk/test-utils';
 
 const App: () => Node = () => {
-  const [v2Response, setV2Response] = useState('');
-  const [v3Response, setV3Response] = useState('');
+  const [response, setResponse] = useState('');
 
-  const fetchV2Response = async () => {
+  const fetchResponse = async () => {
     try {
-      const v2Response = await getV2BrowserResponse();
-      setV2Response(JSON.stringify(v2Response, null, 2));
+      const response = await getBrowserResponse();
+      setResponse(JSON.stringify(response, null, 2));
     } catch (err) {
       console.error(serializeError(err));
-      setV2Response(`Error: ${err}. Check console for more details.`);
-    }
-  };
-
-  const fetchV3Response = async () => {
-    try {
-      const v3Response = await getV3BrowserResponse();
-      setV3Response(JSON.stringify(v3Response, null, 2));
-    } catch (err) {
-      console.error(serializeError(err));
-      setV3Response(`Error: ${err}. Check console for more details.`);
+      setResponse(`Error: ${err}. Check console for more details.`);
     }
   };
 
   return (
     <View style={styles.container}>
       <View style={styles.sectionContainer}>
-        <Text style={styles.sectionTitle}>AWS SDK for JavaScript (v2):</Text>
-        <Button title="Call with v2" onPress={fetchV2Response} />
+        <Text style={styles.sectionTitle}>AWS SDK for JavaScript:</Text>
+        <Button title="Click to make a call" onPress={fetchResponse} />
         <TextInput
           style={styles.sectionDescription}
           multiline={true}
-          placeholder="v2 response will be populated here"
-          value={v2Response}
-        />
-      </View>
-      <View style={styles.sectionContainer}>
-        <Text style={styles.sectionTitle}>AWS SDK for JavaScript (v3):</Text>
-        <Button title="Call with v3" onPress={fetchV3Response} />
-        <TextInput
-          style={styles.sectionDescription}
-          multiline={true}
-          placeholder="v3 response will be populated here"
-          value={v3Response}
+          placeholder="Response will be populated here"
+          value={response}
         />
       </View>
     </View>
