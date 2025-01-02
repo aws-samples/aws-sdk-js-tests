@@ -564,6 +564,7 @@ __metadata:
     "@react-native/metro-config": "npm:^0.74.85"
     react: "npm:^18.3.1"
     react-native: "npm:^0.74.3"
+    react-native-blob-util: "npm:^0.16.4"
     react-native-get-random-values: "npm:^1.11.0"
     react-native-url-polyfill: "npm:^2.0.0"
     serialize-error: "npm:^11.0.3"
@@ -3228,6 +3229,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"base-64@npm:0.1.0":
+  version: 0.1.0
+  resolution: "base-64@npm:0.1.0"
+  checksum: 10c0/fe0dcf076e823f04db7ee9b02495be08a91c445fbc6db03cb9913be9680e2fcc0af8b74459041fe08ad16800b1f65a549501d8f08696a8a6d32880789b7de69d
+  languageName: node
+  linkType: hard
+
 "base64-js@npm:^1.3.1, base64-js@npm:^1.5.1":
   version: 1.5.1
   resolution: "base64-js@npm:1.5.1"
@@ -4325,7 +4333,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"glob@npm:^7.1.1, glob@npm:^7.1.3":
+"glob@npm:^7.1.1, glob@npm:^7.1.3, glob@npm:^7.2.3":
   version: 7.2.3
   resolution: "glob@npm:7.2.3"
   dependencies:
@@ -6310,6 +6318,19 @@ __metadata:
   version: 17.0.2
   resolution: "react-is@npm:17.0.2"
   checksum: 10c0/2bdb6b93fbb1820b024b496042cce405c57e2f85e777c9aabd55f9b26d145408f9f74f5934676ffdc46f3dcff656d78413a6e43968e7b3f92eea35b3052e9053
+  languageName: node
+  linkType: hard
+
+"react-native-blob-util@npm:^0.16.4":
+  version: 0.16.4
+  resolution: "react-native-blob-util@npm:0.16.4"
+  dependencies:
+    base-64: "npm:0.1.0"
+    glob: "npm:^7.2.3"
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  checksum: 10c0/723d157ac7c301efe24ce852ca60f4cbccfa4602573587eb165d6a8e2f388b77cdb51ff0335deba698e57b7e1f9820176fe964cef71d9cb45fac5a6b52ce7efc
   languageName: node
   linkType: hard
 
