@@ -15,7 +15,7 @@ import {Colors} from 'react-native/Libraries/NewAppScreen';
 // React Native polyfills required for AWS SDK for JavaScript.
 import 'react-native-get-random-values';
 import 'react-native-url-polyfill/auto';
-import 'web-streams-polyfill/dist/polyfill';
+import 'web-streams-polyfill/polyfill';
 
 import {getBrowserResponse} from '@aws-sdk/test-utils';
 
