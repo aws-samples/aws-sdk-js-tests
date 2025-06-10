@@ -11,7 +11,7 @@
   "dependencies": {
     "@aws-sdk/test-utils": "workspace:*",
     "react": "^18.3.1",
-    "react-native": "^0.76.5",
+    "react-native": "^0.77.2",
     "react-native-get-random-values": "^1.11.0",
     "react-native-url-polyfill": "^2.0.0",
     "serialize-error": "^11.0.3",
@@ -22,8 +22,8 @@
     "@babel/plugin-transform-class-static-block": "^7.12.5",
     "@babel/runtime": "^7.12.5",
     "@react-native-community/cli": "^15.0.1",
-    "@react-native/babel-preset": "^0.76.5",
-    "@react-native/metro-config": "^0.76.5"
+    "@react-native/babel-preset": "^0.77.2",
+    "@react-native/metro-config": "^0.77.2"
   },
   "author": {
     "name": "AWS SDK for JavaScript Team",
