@@ -34,7 +34,7 @@
     "lint-staged": "13.0.3",
     "prettier": "2.7.1"
   },
-  "packageManager": "yarn@4.6.0",
+  "packageManager": "yarn@4.11.0",
   "lint-staged": {
     "*.{js,css,json,md}": "prettier --write"
   }
