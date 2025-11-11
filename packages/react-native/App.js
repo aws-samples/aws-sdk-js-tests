@@ -6,18 +6,16 @@
  * @flow strict-local
  */
 
-import React, {useState} from 'react';
-import {Button, StyleSheet, View, Text, TextInput} from 'react-native';
-import {serializeError} from 'serialize-error';
-
-import {Colors} from 'react-native/Libraries/NewAppScreen';
+import React, { useState } from 'react';
+import { Button, StyleSheet, View, Text, TextInput } from 'react-native';
+import { serializeError } from 'serialize-error';
 
 // React Native polyfills required for AWS SDK for JavaScript.
 import 'react-native-get-random-values';
 import 'react-native-url-polyfill/auto';
 import 'web-streams-polyfill/polyfill';
 
-import {getBrowserResponse} from '@aws-sdk/test-utils';
+import { getBrowserResponse } from '@aws-sdk/test-utils';
 
 const App: () => Node = () => {
   const [response, setResponse] = useState('');
@@ -61,14 +59,14 @@ const styles = StyleSheet.create({
     fontSize: 18,
     textAlign: 'center',
     fontWeight: '600',
-    color: Colors.black,
+    color: '#000000',
   },
   sectionDescription: {
     flex: 1,
     fontSize: 14,
     fontWeight: '400',
-    color: Colors.dark,
-    backgroundColor: Colors.lighter,
+    color: '#4c4c4c',
+    backgroundColor: '#f0f0f0',
   },
 });
 
