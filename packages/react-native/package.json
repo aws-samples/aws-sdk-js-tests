@@ -18,7 +18,7 @@
     "web-streams-polyfill": "^4.0.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.9",
+    "@babel/core": "^7.29.6",
     "@babel/plugin-transform-class-static-block": "^7.12.5",
     "@babel/runtime": "^7.12.5",
     "@react-native-community/cli": "^19.1.1",
